@@ -1,0 +1,7 @@
+JSON Basics
+
+Difficulty: Easy
+
+1. What does JSON stand for?
+2. What is JSON used for?
+3. Write some JSON.

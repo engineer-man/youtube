@@ -1,0 +1,24 @@
+{
+    "name": "engineer man",
+    "years_active": 1,
+    "average_views": 518.2,
+    "has_youtube_channel": true,
+    "discountination_date": null,
+    "stats": {
+        "total_views": 1800
+    },
+    "videos": [
+        {
+            "name": "Threading Basics in C",
+            "likes": 15,
+            "disliked": 1,
+            "views": 498
+        },
+        {
+            "name": "Create a Reverse Shell in Bash",
+            "likes": 7,
+            "disliked": 0,
+            "views": 512
+        }
+    ]
+}

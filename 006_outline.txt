@@ -1,0 +1,8 @@
+C Pointer and Reference differences
+
+Difficulty: Easy
+
+1. What is a pointer?
+2. What is a reference?
+3. What does it mean to deference a pointer?
+4. Do some pointer stuff.

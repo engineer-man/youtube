@@ -1,0 +1,6 @@
+Create a minimally useful GTK3 application in C
+
+Difficulty: Intermediate
+
+1. What is GTK?
+2. Analyze a GTK application.
