@@ -1,0 +1,14 @@
+Understanding how GCC carries out compilation
+
+Level: Beginner
+
+1. What steps are involved in GCC compilation?
+    - Preprocessing
+        - gcc -E -o 008_sample_exp.c 008_sample.c
+    - Compilation
+        - gcc -S 008_sample_exp.c
+    - Assembly
+        - gcc -c 008_sample_exp.s
+    - Linking
+        - gcc -o 008_sample 008_sample_exp.o
+2. Compile a file in each individual step.
