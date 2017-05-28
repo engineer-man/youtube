@@ -1,0 +1,10 @@
+Bubble Sort algorithm implementation in Python
+
+Level: Beginner
+
+1. What is Bubble Sort?
+2. How does Bubble Sort work?
+    - [1, 2, 4, 5, 6]
+3. What is the best and worst case complexity?
+    - Best, Average/Worst
+4. Implement Bubble Sort.
