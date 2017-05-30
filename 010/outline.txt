@@ -1,0 +1,12 @@
+Node.js Promises using the Q library, Part 1
+
+Level: Intermediate
+Assumptions:
+    - Some JavaScript knowledge.
+    - Implemented any Node.js callbacks.
+
+1. What are promises?
+    - Purpose
+    - Promises/A+ Spec
+2. What is ".then()" and how to use?
+3. What is ".spread()" and how to use?
