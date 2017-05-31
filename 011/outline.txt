@@ -1,0 +1,11 @@
+Thread synchronization with mutexes in C
+
+Level: Intermediate
+Assumptions:
+    - Some C knowledge
+    - Know what a thread is
+
+1. What is a mutex?
+2. What problem does mutexes solve?
+3. What are deadlocks and how to avoid them?
+4. Practical example.
