@@ -1,0 +1,12 @@
+How to manage memory with malloc, calloc, realloc, and free in C
+
+Level: Intermediate
+Assumptions:
+    - Some C knowledge
+
+1. What is dynamic memory allocation?
+2. How does malloc() work?
+3. How does calloc() work?
+4. How does realloc() work?
+5. How does free() work?
+6. Example time.
