@@ -1,0 +1,8 @@
+Working with character arrays and "strings" in C
+
+Level: Beginner
+Assumptions: None
+
+1. What is a character array?
+2. Does C have strings?
+3. Example time
