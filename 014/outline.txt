@@ -1,0 +1,9 @@
+Structs and Pointers to Structs in C
+
+Level: Beginner
+Assumptions: None
+
+1. What is a struct?
+2. What can be stored in a struct?
+3. How are structs used?
+4. Example time
