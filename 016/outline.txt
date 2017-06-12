@@ -1,0 +1,9 @@
+C Buffer Overflow, Heap/Stack Corruption and Analysis
+
+Level: Intermediate
+Assumptions:
+    - You know what a buffer is
+
+1. What is a buffer overflow and heap/stack corruption?
+2. What happens on a buffer overflow?
+3. Example time
