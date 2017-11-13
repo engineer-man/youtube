@@ -1,0 +1,18 @@
+Launching computations using an Nvidia GPU w/ CUDA in C
+
+Level: Intermediate
+
+1.  What do you need to get started?
+    You need an Nvidia GPU that supports CUDA, which is
+    most GPUs these days. Then you'll need to download
+    the CUDA toolkit. Link in description.
+
+2.  How are CUDA programs compiled?
+    Contained with the CUDA toolkit is a special compiler
+    called nvcc. When nvcc is ran, it splits the code between
+    CUDA specific code and regular C code. The CUDA code is
+    compiled with nvcc, and the C code by the host compiler
+    (gcc, clang, etc.). The resulting object files are linked
+    into a final executable.
+
+3.  Example time? Let's do it.
