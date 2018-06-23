@@ -1,0 +1,12 @@
+Python Basics -- Video 4/10
+
+Level: Beginner
+
+Strings/Numbers
+    - Single Line
+    - Multi Line
+    - Substrings
+    - Integer
+    - Float
+    - Conversion to String
+    - Conversion to Integer/Float

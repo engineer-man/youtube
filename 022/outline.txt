@@ -1,0 +1,16 @@
+Python Basics -- Video 2/10
+
+Level: Beginner
+
+Running Programs
+    - Installation
+        * Might already be installed
+        * Ubuntu: apt
+        * RHEL: yum
+        * macOS: brew or use python site
+        * Windows: use python site
+        * Site: python.org/downloads
+    - Hello World
+    - Normal
+    - Hashbang (*nix)
+    - Interpreter

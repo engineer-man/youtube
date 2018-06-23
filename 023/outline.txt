@@ -1,0 +1,11 @@
+Python Basics -- Video 3/10
+
+Level: Beginner
+
+Basic Syntax
+    - Indentation
+    - Commenting
+    - Variables
+    - Multi-line Statements
+    - Continuance
+    - Printing
