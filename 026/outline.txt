@@ -1,0 +1,11 @@
+Python Basics -- Video 7/10
+
+Level: Beginner
+
+Lists
+    - Initialize
+    - Add Item
+    - Access Item
+    - Change Item
+    - Remove Item
+    - Iterate
