@@ -1,0 +1,10 @@
+Python Basics -- Video 8/10
+
+Level: Beginner
+
+Functions
+    - Definition
+    - Calling
+    - Arguments
+    - Return
+    - Multiple Return
