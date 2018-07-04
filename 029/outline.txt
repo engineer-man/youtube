@@ -1,0 +1,10 @@
+Python Basics -- Video 9/10
+
+Level: Beginner
+
+Classes
+    - Definition
+    - Properties
+    - Methods
+    - Self Keyword
+    - Inclusion/Usage

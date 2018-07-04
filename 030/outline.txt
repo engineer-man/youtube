@@ -1,0 +1,11 @@
+Python Basics -- Video 10/10
+
+Level: Beginner
+
+Files
+    - Open
+    - Open Modes
+    - Read All
+    - Read Lines
+    - Write/Append
+    - Close
