@@ -1,0 +1,11 @@
+Show & Tell Ep. 1 -- Blackjack Simulator
+
+Level: Intermediate-Advanced
+
+Why?
+A friend of mine once suggested that the best strategy
+for Blackjack is to never bust. Basically he suggested
+that the player should hit only until he reaches 12 and
+then stand. The player should also treat an Ace as an
+11 in all cases. In this way, the bet is purely on the
+dealer busting.
