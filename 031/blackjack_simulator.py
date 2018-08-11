@@ -60,19 +60,22 @@ def simulate(queue, batch_size):
 
 		p_sum = sum(player_cards)
 		d_sum = sum(dealer_cards)
-
-		# dealer bust
-		if d_sum > 21:
-			return 1;
-		# dealer tie
-		if d_sum == p_sum:
-			return 0;
-		# dealer win
-		if d_sum > p_sum:
-			return -1;
-		# dealer lose
-		if d_sum < p_sum:
-			return 1
+		# player bust
+		if p_sum > 21:
+			return -1
+		else:
+			# dealer bust
+			if d_sum > 21:
+				return 1;
+			# dealer tie
+			if d_sum == p_sum:
+				return 0;
+			# dealer win
+			if d_sum > p_sum:
+				return -1;
+			# dealer lose
+			if d_sum < p_sum:
+				return 1
 
 	# starting deck
 	deck = new_deck()
