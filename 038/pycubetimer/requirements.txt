@@ -1,0 +1,2 @@
+pyTwistyScrambler==1.2
+keyboard==0.13.2
