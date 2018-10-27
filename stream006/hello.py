@@ -2,18 +2,20 @@
 name1 = 'engineer man'
 name2 = 'pdog'
 name3 = 'duckie'
+viewers = 166
 
-# print out stuff
-print(name1)
-print(name2)
-print(name3)
+# yell out stuff
+yell(name1)
+yell(name2)
+yell(name3)
+yell(viewers)
 
 # reassign
 name1 = 'pizza'
 name2 = 'wolf'
 name3 = 'brtwrst'
 
-# print out stuff again
-print(name1)
-print(name2)
-print(name3)
+# yell out stuff again
+yell(name1)
+yell(name2)
+yell(name3)
