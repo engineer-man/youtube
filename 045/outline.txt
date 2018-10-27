@@ -4,20 +4,19 @@ ES2017 and beyond
     1. New Useful Syntax
 Core Concepts
     2. Installation/Running
-    3. Functional Programming
-    4. Event Loop Concurrency Model
-    5. Promises
-    6. Await/Async
+    3. Event Loop Concurrency Model
+    4. Promises
+    5. Await/Async
 Important Standard Modules
-    7. Child Processes
-    8. Crypto
-    9. File I/O
-    10. HTTP/HTTPS
-    11. Modules
-    12. TCP Networking
+    6. Child Processes
+    7. Crypto
+    8. File I/O
+    9. HTTP/HTTPS
+    10. Modules
+    11. TCP Networking
 Important Community Modules
-    13. Bluebird
-    14. Express
-    15. Forever
-    16. Request
-    17. Moment
+    12. Bluebird
+    13. Express
+    14. Forever
+    15. Request
+    16. Moment
