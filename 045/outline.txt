@@ -14,9 +14,3 @@ Important Standard Modules
     9. HTTP/HTTPS
     10. Modules
     11. TCP Networking
-Important Community Modules
-    12. Bluebird
-    13. Express
-    14. Forever
-    15. Request
-    16. Moment
