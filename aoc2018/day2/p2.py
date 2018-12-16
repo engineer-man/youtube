@@ -20,4 +20,3 @@ for i in range(0, len(s1)):
         final += s1[i]
 
 print(final)
-#mkcdflathzwsvjxrevymbdpoq
