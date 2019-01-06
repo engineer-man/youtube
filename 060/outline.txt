@@ -1,0 +1,36 @@
+/bin
+  - common executables available for everyone, ex. cp rm ls
+/boot
+  - kernel and boot configuration
+/dev
+  - files which point to both physical and pseudo devices
+/etc
+  - system and program configuration files
+/home
+  - non-root user home directories
+/lib
+/lib32
+/lib64
+  - library files used by the system, include .so files and others
+/lost+found
+  - saved files due to failure
+/media
+  - auto-mounting place for certain external devices on some distros
+/mnt
+  - place to mount various file systems
+/opt
+  - various software
+/proc
+  - virtual filesystem for resources, processes, and more
+/root
+  - root user home directory
+/sbin
+  - similar to /bin, but for system administrators, ex. fdisk
+/tmp
+  - temporary file storage, wiped out after reboot
+/usr
+  - user programs, library files, docs, etc., ex. obs
+/var
+  - variable files for various purposes, ex. logs, tz data
+/vmlinuz -> boot/vmlinuz-4.15.0-43-generic
+  - compressed linux kernel
