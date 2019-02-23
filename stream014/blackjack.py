@@ -1,6 +1,9 @@
 import os
 import random
 
+player_points = 0
+dealer_points = 0
+
 def calc_hand(hand):
     non_aces = [c for c in hand if c != 'A']
     aces = [c for c in hand if c == 'A']
@@ -49,42 +52,54 @@ while True:
         dealer_score = calc_hand(dealer)
 
         if standing:
-            print('Dealer Cards: [{}] ({})'.format(']['.join(dealer), dealer_score))
+            print(f"Dealer Cards: [{']['.join(dealer)}] ({dealer_score})")
         else:
-            print('Dealer Cards: [{}][?]'.format(dealer[0]))
+            print(f'Dealer Cards: [{dealer[0]}][?]')
 
-        print('Your Cards:   [{}] ({})'.format(']['.join(player), player_score))
+        print(f"Your Cards:   [{']['.join(player)}] ({player_score})\n==")
         print('')
 
         if standing:
             if dealer_score > 21:
                 print('Dealer busted, you win!')
+                player_points+=1
             elif player_score == dealer_score:
                 print('Push, nobody wins')
             elif player_score > dealer_score:
                 print('You beat the dealer, you win!')
+                player_points+=1
+                if choice == '3': #(For double down)
+                    print('Extra point for doubling down')
+                    player_points+=1
             else:
                 print('You lose :(')
+                dealer_points+=1
 
             print('')
-            input('Play again? Hit enter to continue')
+            print("-=Current score=-")
+            print(f" | Dealer: {dealer_points} |")
+            print(f" | Player: {player_points} |")
+            print('-' * 17)
+
+            print('')
+            input('Play again? (Hit enter to continue) ')
             break
 
         if first_hand and player_score == 21:
-            print('Blackjack! Nice!')
-            print('')
-            input('Play again? Hit enter to continue')
+            print('Blackjack! Nice!\n')
+            input('Play again? (Hit enter to continue) ')
             break
 
         if player_score > 21:
             print('You busted!')
             print('')
-            input('Play again? Hit enter to continue')
+            input('Play again? (Hit enter to continue) ')
             break
 
         print('What would you like to do?')
         print(' [1] Hit')
         print(' [2] Stand')
+        print(' [3] Double Down')
 
         print('')
         choice = input('Your choice: ')
@@ -98,3 +113,6 @@ while True:
             standing = True
             while calc_hand(dealer) <= 16:
                 dealer.append(cards.pop())
+        elif choice == '3':
+            player.append(cards.pop())
+            standing = True
