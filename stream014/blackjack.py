@@ -21,7 +21,9 @@ def calc_hand(hand):
 
     return sum
 
-while True:
+play = True
+
+while play:
     cards = [
         '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A',
         '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A',
@@ -48,7 +50,9 @@ while True:
         player_score = calc_hand(player)
         dealer_score = calc_hand(dealer)
 
-        if standing:
+        dealer_blackjack = dealer_score == 21 and dealer[0] == 'A'
+
+        if standing or (first_hand and dealer_blackjack):
             print('Dealer Cards: [{}] ({})'.format(']['.join(dealer), dealer_score))
         else:
             print('Dealer Cards: [{}][?]'.format(dealer[0]))
@@ -65,21 +69,18 @@ while True:
                 print('You beat the dealer, you win!')
             else:
                 print('You lose :(')
-
-            print('')
-            input('Play again? Hit enter to continue')
             break
 
         if first_hand and player_score == 21:
             print('Blackjack! Nice!')
-            print('')
-            input('Play again? Hit enter to continue')
+            break
+
+        if first_hand and dealer_score == 21:
+            print('Dealer got Blackjack!')
             break
 
         if player_score > 21:
             print('You busted!')
-            print('')
-            input('Play again? Hit enter to continue')
             break
 
         print('What would you like to do?')
@@ -98,3 +99,8 @@ while True:
             standing = True
             while calc_hand(dealer) <= 16:
                 dealer.append(cards.pop())
+
+    print('')
+    choice = input('Play again? [Y/n] ')
+    if choice.lower() != 'y':
+        play = False
