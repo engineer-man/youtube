@@ -1,0 +1,3 @@
+import numpy
+
+print('hello')
