@@ -1,0 +1,11 @@
+# start process with nice value (10 by default)
+nice [command]
+
+# start process with a specific nice value (2 in this case)
+nice -n 2 [command]
+
+# change nice value to 2 for a running process
+renice -n 2 -p [pid]
+
+# change nice value to 2 for all running processes for a user
+renice -n 2 -u [user]
