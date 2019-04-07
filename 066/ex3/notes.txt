@@ -1,0 +1,8 @@
+# start 8 instances of app
+docker-compose up --scale app=8
+
+# start 8 instances of app in background
+docker-compose up -d --scale app=8
+
+# stop
+docker-compose down

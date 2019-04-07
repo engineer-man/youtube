@@ -1,0 +1,4 @@
+mysql/*
+!mysql/.gitkeep
+redis/*
+!redis/.gitkeep
