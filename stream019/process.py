@@ -14,11 +14,13 @@ def output_json():
 def output_xml():
     xml = ['<?xml version="1.0" encoding="UTF-8"?>']
 
+    xml.append('<banks>')
     for row in reader:
         xml.append('<bank>')
         for k, v in row.items():
             xml.append('    <{}>{}</{}>'.format(k, v, k))
         xml.append('</bank>')
+    xml.append('<banks>')
 
     with open('data.xml', 'w') as file:
         file.write('\n'.join(xml))
