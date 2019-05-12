@@ -1,0 +1,37 @@
+5. Java
+  - Old and stable language
+  - Backed by Oracle
+  - Early competitor in the web scene (Java EE)
+  - Java ME foothold in software for early phones and other devices
+  - Primary language for Android Development
+  - Commonly taught in college
+  - 280k community packages via Maven
+4. PHP
+  - Powers majority of websites
+  - Simple language with low barrier to entry
+  - Thanks to Apache, low maintenance
+  - Easy to install if not already available
+  - Primary language present on Linux shared hosting
+  - Base language for Hack and HHVM
+  - 200k community packages via Packagist
+3. C#
+  - Backed by Microsoft
+  - Primary language for Windows development
+  - Primary language for game development with Unity
+  - Cross platform app development with Xamarin
+  - 150k community packages via nuget
+2. Python
+  - Extremely simple and intuitive syntax
+  - Wide adoption for data science and AI applications
+  - Growing adoption for web applications
+  - Official language of the Raspberry Pi
+  - Several implementations such as CPython, IronPython, Jython, and PyPython
+  - 180k community packages via PyPi
+1. JavaScript
+  - Language monopoly in the browser
+  - Official language of Node.js for backend development
+  - Primary language for HTML5 mobile apps and React Native apps
+  - Primary language for Electron desktop app development
+  - Primary language for 2D and 3D graphics with WebGL
+  - Built from the ground up on top of the event loop
+  - 800k community packages via npm
