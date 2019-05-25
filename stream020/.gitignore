@@ -1,0 +1,7 @@
+ffi/c/main.o
+ffi/c/main.so
+ffi/cpp/main.o
+ffi/cpp/main.so
+ffi/go/main.o
+ffi/go/main.h
+ffi/go/main.so
