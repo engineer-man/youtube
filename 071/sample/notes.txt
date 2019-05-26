@@ -1,0 +1,7 @@
+tsconfig.json for node.js deployments:
+- set module to commonjs
+- set target to es6
+
+tsconfig.json for browser deployments:
+- set module to amd
+- set target to es5
