@@ -1,0 +1,4 @@
+# start with
+npm install
+node_modules/.bin/gulp
+goto http://127.0.0.1:8080

@@ -1,0 +1,19 @@
+body {
+    background: #333;
+    color: #fff;
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+img {
+    width: 64px;
+    height: 64px;
+    float: left;
+    margin-right: 20px;
+}
