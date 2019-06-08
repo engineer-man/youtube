@@ -1,0 +1,31 @@
+topics:
+    development:
+        - versioning
+        - operating systems
+    vendor selection:
+        - feature set
+        - budget
+        - scale
+    managed services:
+        - hosted sql
+        - hosted object cache
+        - cdn
+    access:
+        - ssh (devs)
+        - ssh (deployment keys)
+        - remote service access
+    security:
+        - firewalls
+        - private networking
+        - subnets or nah
+        - storage of secrets
+    backups:
+        - snapshots
+        - db dumps
+    pre-deployment:
+        - tests
+        - build reports
+    deploying:
+        - process
+        - coordinating
+        - down time
