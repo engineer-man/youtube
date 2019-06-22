@@ -1,0 +1,47 @@
+topics:
+    intro:
+        - what is a rest api
+        - normal api vs rest api
+    restfulness:
+        - no state
+        - separation of concerns
+        - proper headers
+        - proper verbs
+        - cacheability
+    authentication:
+        - api key
+        - oauth2
+    versioning:
+        - format
+        - why versioning is necessary
+    relevant headers:
+        - authorization
+        - accept
+        - cache-control
+    resources:
+        - doesn't always represent internal structure
+        - should not be bloated
+        - clean urls
+    relevant verbs/crud:
+        - POST - create
+        - GET - read
+        - PUT - update
+        - DELETE - delete
+    relevant http codes:
+        no problem:
+            - 200 OK -- all good
+            - 201 Created -- entity created (returned)
+            - 204 No Content -- entity created (not returned)
+        client problem:
+            - 400 Bad Request -- invalid data, not enough data
+            - 401 Unauthorized -- authentication fail
+            - 403 Forbidden -- authentication good, authorization fail
+            - 404 Not Found -- resource missing
+            - 429 Too Many Requests -- throttling is occurring
+        server problem:
+            - 500 Internal Server Error - server fail
+get this code working:
+    - run npm install
+    - load data from schema.sql into your database
+    - update models.js line 5 with your db config
+    - run node api.js

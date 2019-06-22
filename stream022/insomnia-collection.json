@@ -1,0 +1,508 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2019-06-22T19:36:06.156Z",
+	"__export_source": "insomnia.desktop.app:v6.0.2",
+	"resources": [
+		{
+			"_id": "wrk_66e7786df348409d8df1607227fe2db7",
+			"created": 1561219267043,
+			"description": "",
+			"modified": 1561219267043,
+			"name": "em api",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_76ec81c3c0a8489ca3864f02d59eaffa",
+			"color": null,
+			"created": 1561219267053,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1561219267053,
+			"modified": 1561219267053,
+			"name": "New Environment",
+			"parentId": "wrk_66e7786df348409d8df1607227fe2db7",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_c1cfafd438cc45e3ba291f29721fe581",
+			"cookies": [],
+			"created": 1561219267054,
+			"modified": 1561219267054,
+			"name": "Default Jar",
+			"parentId": "wrk_66e7786df348409d8df1607227fe2db7",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_ae87754d20a548738110207683b0e3c2",
+			"created": 1561219812406,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1561219812506,
+			"modified": 1561220017084,
+			"name": "Authors",
+			"parentId": "wrk_66e7786df348409d8df1607227fe2db7",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_db14ee5ad4524c59a6ed31afa21366cb",
+			"created": 1561219838166,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1561219812481,
+			"modified": 1561220019278,
+			"name": "Books",
+			"parentId": "wrk_66e7786df348409d8df1607227fe2db7",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_b39d68928e074dfebbeb232f3faaf464",
+			"created": 1561219981855,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1561219812456,
+			"modified": 1561220014256,
+			"name": "AuthorBooks",
+			"parentId": "wrk_66e7786df348409d8df1607227fe2db7",
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_7a19c8c490a6466e80295db31d24ee6e",
+			"authentication": {},
+			"body": {},
+			"created": 1561219495668,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_71eadcd61c4e4f9cbc9a12a2baa57da2",
+					"name": "authorization",
+					"value": "123abc"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1561219654037,
+			"method": "GET",
+			"modified": 1561225715888,
+			"name": "Read Authors",
+			"parameters": [],
+			"parentId": "fld_ae87754d20a548738110207683b0e3c2",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:9000/api/v1/authors",
+			"_type": "request"
+		},
+		{
+			"_id": "req_c59951086a204861a94618108fbdd50c",
+			"authentication": {},
+			"body": {},
+			"created": 1561219526442,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_71eadcd61c4e4f9cbc9a12a2baa57da2",
+					"name": "authorization",
+					"value": "123abc"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1561219653987,
+			"method": "GET",
+			"modified": 1561226122629,
+			"name": "Read Author",
+			"parameters": [],
+			"parentId": "fld_ae87754d20a548738110207683b0e3c2",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:9000/api/v1/authors/2",
+			"_type": "request"
+		},
+		{
+			"_id": "req_4cdb733754a740dcba1666f863a7c826",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Engineer Man\"\n}"
+			},
+			"created": 1561219549139,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_71eadcd61c4e4f9cbc9a12a2baa57da2",
+					"name": "authorization",
+					"value": "123abc"
+				},
+				{
+					"id": "pair_e1fac70e0312497f803fcbf6fbe06764",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1561219653937,
+			"method": "POST",
+			"modified": 1561225601540,
+			"name": "Create Author",
+			"parameters": [],
+			"parentId": "fld_ae87754d20a548738110207683b0e3c2",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:9000/api/v1/authors",
+			"_type": "request"
+		},
+		{
+			"_id": "req_5d244c4ebc454b329b63c4abb339101e",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Author Name\"\n}"
+			},
+			"created": 1561219586778,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_71eadcd61c4e4f9cbc9a12a2baa57da2",
+					"name": "authorization",
+					"value": "123abc"
+				},
+				{
+					"id": "pair_e1fac70e0312497f803fcbf6fbe06764",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1561219653887,
+			"method": "PUT",
+			"modified": 1561225719884,
+			"name": "Update Author",
+			"parameters": [],
+			"parentId": "fld_ae87754d20a548738110207683b0e3c2",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:9000/api/v1/authors/18",
+			"_type": "request"
+		},
+		{
+			"_id": "req_df6a75163c0e42c09d1b360ad80c2fd2",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1561219626194,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_71eadcd61c4e4f9cbc9a12a2baa57da2",
+					"name": "authorization",
+					"value": "123abc"
+				},
+				{
+					"id": "pair_e1fac70e0312497f803fcbf6fbe06764",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1561219653837,
+			"method": "DELETE",
+			"modified": 1561225210280,
+			"name": "Delete Author",
+			"parameters": [],
+			"parentId": "fld_ae87754d20a548738110207683b0e3c2",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:9000/api/v1/authors/12",
+			"_type": "request"
+		},
+		{
+			"_id": "req_ef951db2baf544b48f7ff65e4c3bdbc8",
+			"authentication": {},
+			"body": {},
+			"created": 1561219682834,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_71eadcd61c4e4f9cbc9a12a2baa57da2",
+					"name": "authorization",
+					"value": "123abc"
+				},
+				{
+					"id": "pair_e1fac70e0312497f803fcbf6fbe06764",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1561179452038.4297,
+			"method": "GET",
+			"modified": 1561225851784,
+			"name": "Read Books",
+			"parameters": [],
+			"parentId": "fld_db14ee5ad4524c59a6ed31afa21366cb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:9000/api/v1/books",
+			"_type": "request"
+		},
+		{
+			"_id": "req_3d492ae3e3f84aa0826bff9d424dc2f8",
+			"authentication": {},
+			"body": {},
+			"created": 1561219710466,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_71eadcd61c4e4f9cbc9a12a2baa57da2",
+					"name": "authorization",
+					"value": "123abc"
+				},
+				{
+					"id": "pair_e1fac70e0312497f803fcbf6fbe06764",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1561179451988.4297,
+			"method": "GET",
+			"modified": 1561226123936,
+			"name": "Read Author Books",
+			"parameters": [],
+			"parentId": "fld_db14ee5ad4524c59a6ed31afa21366cb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:9000/api/v1/authors/2/books",
+			"_type": "request"
+		},
+		{
+			"_id": "req_369d7b58c1714a8db2bb4888562bf7a9",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Book Name\"\n}"
+			},
+			"created": 1561219730386,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_71eadcd61c4e4f9cbc9a12a2baa57da2",
+					"name": "authorization",
+					"value": "123abc"
+				},
+				{
+					"id": "pair_e1fac70e0312497f803fcbf6fbe06764",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1561179451938.4297,
+			"method": "POST",
+			"modified": 1561225884528,
+			"name": "Create Author Book",
+			"parameters": [],
+			"parentId": "fld_db14ee5ad4524c59a6ed31afa21366cb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:9000/api/v1/authors/1/books",
+			"_type": "request"
+		},
+		{
+			"_id": "req_4c40ebe9c29a400a98ad1f7d3c3fcf2a",
+			"authentication": {},
+			"body": {},
+			"created": 1561219907820,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_71eadcd61c4e4f9cbc9a12a2baa57da2",
+					"name": "authorization",
+					"value": "123abc"
+				},
+				{
+					"id": "pair_e1fac70e0312497f803fcbf6fbe06764",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1561179452013.4297,
+			"method": "GET",
+			"modified": 1561225854804,
+			"name": "Read Book",
+			"parameters": [],
+			"parentId": "fld_db14ee5ad4524c59a6ed31afa21366cb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:9000/api/v1/books/1",
+			"_type": "request"
+		},
+		{
+			"_id": "req_68d84f26ca7e4bc387e984dc869f341b",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Book Name\"\n}"
+			},
+			"created": 1561219942043,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_71eadcd61c4e4f9cbc9a12a2baa57da2",
+					"name": "authorization",
+					"value": "123abc"
+				},
+				{
+					"id": "pair_e1fac70e0312497f803fcbf6fbe06764",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1561177662782.2148,
+			"method": "PUT",
+			"modified": 1561225858984,
+			"name": "Update Book",
+			"parameters": [],
+			"parentId": "fld_db14ee5ad4524c59a6ed31afa21366cb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:9000/api/v1/books/29",
+			"_type": "request"
+		},
+		{
+			"_id": "req_0a810a1268cf4c0e9568bf7421094435",
+			"authentication": {},
+			"body": {},
+			"created": 1561220072436,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_71eadcd61c4e4f9cbc9a12a2baa57da2",
+					"name": "authorization",
+					"value": "123abc"
+				},
+				{
+					"id": "pair_e1fac70e0312497f803fcbf6fbe06764",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1561176768204.1074,
+			"method": "DELETE",
+			"modified": 1561225860424,
+			"name": "Delete Book",
+			"parameters": [],
+			"parentId": "fld_db14ee5ad4524c59a6ed31afa21366cb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:9000/api/v1/books/29",
+			"_type": "request"
+		},
+		{
+			"_id": "req_82372d5f7f884961b829de81ebe260b4",
+			"authentication": {},
+			"body": {},
+			"created": 1561220029749,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_71eadcd61c4e4f9cbc9a12a2baa57da2",
+					"name": "authorization",
+					"value": "123abc"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1561219654012,
+			"method": "GET",
+			"modified": 1561226127032,
+			"name": "Read Author Books",
+			"parameters": [],
+			"parentId": "fld_b39d68928e074dfebbeb232f3faaf464",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:9000/api/v1/author-books",
+			"_type": "request"
+		},
+		{
+			"_id": "req_fa404108e1e74fb981f0c8190d6a147f",
+			"authentication": {},
+			"body": {},
+			"created": 1561220048854,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_71eadcd61c4e4f9cbc9a12a2baa57da2",
+					"name": "authorization",
+					"value": "123abc"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1561219653999.5,
+			"method": "GET",
+			"modified": 1561226128108,
+			"name": "Read Author Book",
+			"parameters": [],
+			"parentId": "fld_b39d68928e074dfebbeb232f3faaf464",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:9000/api/v1/author-books/2",
+			"_type": "request"
+		}
+	]
+}

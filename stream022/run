@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+pid=
+
+while true; do
+    node api.js &
+    pid=$!
+    inotifywait -e modify,create,delete,move . -r
+    echo "killing $pid and restarting..."
+    kill -15 $pid
+    wait $pid
+done
