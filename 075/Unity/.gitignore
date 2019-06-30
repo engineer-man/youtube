@@ -1,0 +1,24 @@
+.DS_Store*
+._*
+.Spotlight-V100
+.Trashes
+[Tt]humbs.db
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+.vs/
+[Ee]xported[Oo]bj/
+/*.csproj
+/*.unityproj
+/*.sln
+/*.suo
+/*.user
+/*.userprefs
+/*.pidb
+/*.booproj
+sysinfo.txt
+Assets/OtherAssets/
+Assets/Plugins/
+Assets/Standard Assets/
+Assets/AssetStoreTools/
