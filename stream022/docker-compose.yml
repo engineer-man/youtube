@@ -1,0 +1,20 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:5.7
+    ports:
+      - 3306:3306
+    volumes:
+      - ./schema.sql:/docker-entrypoint-initdb.d/dump.sql
+    restart: always
+    environment:
+      MYSQL_DATABASE: test
+      MYSQL_ROOT_PASSWORD: root
+#  node-server:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile-node
+#    ports:
+#      - 9000:9000
+#    depends_on:
+#      - mysql

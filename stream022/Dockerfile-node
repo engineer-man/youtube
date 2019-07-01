@@ -1,0 +1,5 @@
+FROM node:8.16.0-alpine
+COPY . /usr/src/rest
+WORKDIR /usr/src/rest
+RUN npm install
+CMD node api.js

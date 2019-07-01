@@ -45,3 +45,7 @@ get this code working:
     - load data from schema.sql into your database
     - update models.js line 5 with your db config
     - run node api.js
+  dockerized way:
+    - update models.js line 6 with 'mysql'
+    - optionally uncomment the node server section in the docker-compose.yml file to start a node server, too
+    - run 'docker-compose up' to start the container

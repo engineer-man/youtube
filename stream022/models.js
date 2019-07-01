@@ -3,7 +3,7 @@ const path = require('path');
 const Sequelize = require('sequelize');
 const basename = path.basename(module.filename);
 const sequelize = new Sequelize('test', 'root', 'root', { // db name, username, password
-    host: '127.0.0.1',
+    host: '127.0.0.1', // when dockerized, write 'mysql' as the host
     dialect: 'mysql',
     logging: false,
     timezone: '+00:00',
