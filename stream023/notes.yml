@@ -1,0 +1,20 @@
+meta:
+    - youtube comments
+    - stream topics
+    - new unity videos
+
+topics:
+    history:
+        - dennis ritchie
+        - unix (ken thompson)
+        - unix uses + kernel
+        - c89 standardized by ansi
+        - c posix lib
+        - gcc (gnu compiler collection)
+    language:
+        - manual memory
+        - pointers
+        - no abstraction
+        - types - int float double char
+        - strings (or not)
+        - structs and unions
