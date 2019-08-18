@@ -33,7 +33,7 @@ unsigned int hash(const char *key) {
 
 entry_t *ht_pair(const char *key, const char *value) {
     // allocate the entry
-    entry_t *entry = malloc(sizeof(entry) * 1);
+    entry_t *entry = malloc(sizeof(entry_t) * 1);
     entry->key = malloc(strlen(key) + 1);
     entry->value = malloc(strlen(value) + 1);
 
