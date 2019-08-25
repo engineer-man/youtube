@@ -8,6 +8,7 @@ typedef struct node_t {
 } node_t;
 
 node_t *head = NULL;
+node_t *tail = NULL;
 
 void add_at(int pos, int data) {
     node_t *node = malloc(sizeof(node_t) * 1);
@@ -18,6 +19,7 @@ void add_at(int pos, int data) {
     // handle case where list is empty
     if (head == NULL) {
         head = node;
+        tail = node;
         return;
     }
 
@@ -43,8 +45,9 @@ void add_at(int pos, int data) {
         return;
     }
 
-    // end
+    // end, include tail update
     if (cur == NULL) {
+        tail = node;
         prev->next = node;
         node->prev = prev;
         return;
@@ -95,6 +98,7 @@ void rem(int data) {
     // handle last item
     if (cur->next == NULL) {
         cur->prev->next = NULL;
+        tail = cur->prev;
 
         free(cur);
         return;
@@ -120,12 +124,7 @@ void dump_fwd() {
 }
 
 void dump_rev() {
-    node_t *temp = head;
-
-    // seek to the end
-    while (temp->next != NULL) {
-        temp = temp->next;
-    }
+    node_t *temp = tail;
 
     while (temp != NULL) {
         printf("data: %d\n", temp->data);
