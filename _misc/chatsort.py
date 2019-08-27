@@ -1,3 +1,4 @@
+from __future__ import print_function
 import json
 import time
 
@@ -29,4 +30,4 @@ final_msgs.sort()
 for m in final_msgs:
     ts = time.strftime('%Y-%m-%d %I:%M:%S %p', time.localtime(float(m[:10])))
     m = ts + ' ' + m[16:]
-    print m.encode('utf-8')
+    print(m.encode('utf-8'))

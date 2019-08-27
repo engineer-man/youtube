@@ -1,3 +1,4 @@
+from __future__ import print_function
 # open/open modes
 animals = open('animals.txt', 'a+')
 # r  = open for read (default)
@@ -8,12 +9,12 @@ animals = open('animals.txt', 'a+')
 
 # read
 text = animals.read()
-print text
+print(text)
 animals.seek(0)
 
 # read lines
 for animal in animals:
-	print animal,
+	print(animal, end=' ')
 
 # write/append
 animals.write('elephant\n')

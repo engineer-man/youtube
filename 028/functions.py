@@ -1,7 +1,8 @@
+from __future__ import print_function
 # definition
 def my_fn():
 	# your code
-	print 'hello'
+	print('hello')
 
 # arguments/return
 def add(n1, n2):
@@ -14,6 +15,6 @@ def square(n1, n2):
 # calling
 my_fn()
 result = add(n2=1, n1=2)
-print result
+print(result)
 result1, result2 = square(1, 2)
-print result1, result2
+print(result1, result2)

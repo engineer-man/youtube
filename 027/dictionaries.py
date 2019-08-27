@@ -1,3 +1,4 @@
+from __future__ import print_function
 # initialize
 my_dict = {}
 
@@ -7,7 +8,7 @@ my_dict['state'] = 'florida'
 my_dict['age'] = 37
 
 # access item
-print my_dict['name']
+print(my_dict['name'])
 
 # change item
 my_dict['name'] = 'engineer man'
@@ -17,4 +18,4 @@ del my_dict['state']
 
 # iterate
 for k, v in my_dict.iteritems():
-	print k, '=>', v
+	print(k, '=>', v)

@@ -1,7 +1,8 @@
+from __future__ import print_function
 # indentation
 if True:
-		print 'hello'
-		print 'asd'
+		print('hello')
+		print('asd')
 
 # commenting
 # single-line comment
@@ -24,4 +25,4 @@ long_name = \
 	"something else"
 
 # printing
-print 'hello world',
+print('hello world', end=' ')

@@ -1,3 +1,4 @@
+from __future__ import print_function
 def sort(arr):
     while True:
         corrected = False
@@ -10,8 +11,8 @@ def sort(arr):
 
 
 # best O(n)
-print sort([1, 2, 3, 4, 5, 6])
+print(sort([1, 2, 3, 4, 5, 6]))
 # average O(n^2)
-print sort([4, 2, 3, 1, 6, 5])
+print(sort([4, 2, 3, 1, 6, 5]))
 # worst O(n^2)
-print sort([6, 5, 4, 3, 2, 1])
+print(sort([6, 5, 4, 3, 2, 1]))

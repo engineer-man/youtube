@@ -1,3 +1,4 @@
+from __future__ import print_function
 class Tank(object):
 	def __init__(self,name):
 		self.name = name
@@ -14,17 +15,17 @@ class Tank(object):
 	def fire_at(self, enemy):
 		if self.ammo >=1:
 			self.ammo -=1
-			print self.name, "fires on", enemy.name
+			print(self.name, "fires on", enemy.name)
 			enemy.hit()
 		else:
-			print self.name, "has no shells!"
+			print(self.name, "has no shells!")
 
 	def hit(self):
 		self.armor -= 20
-		print self.name, "is hit!"
+		print(self.name, "is hit!")
 		if self.armor <= 0:
 			self.explode()
 
 	def explode(self):
 		self.alive = False
-		print self.name, "explodes!"
+		print(self.name, "explodes!")

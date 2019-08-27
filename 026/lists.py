@@ -1,3 +1,4 @@
+from __future__ import print_function
 # initialize
 my_list = [1, 2, 3, ":)", True, 4.5]
 
@@ -5,7 +6,7 @@ my_list = [1, 2, 3, ":)", True, 4.5]
 my_list.append(88)
 
 # access item
-print my_list[3]
+print(my_list[3])
 
 # change item
 my_list[3] = ':D'
@@ -15,4 +16,4 @@ del my_list[3]
 
 # iterate
 for item in my_list:
-	print item
+	print(item)

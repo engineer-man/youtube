@@ -1,3 +1,4 @@
+from __future__ import print_function
 # definition/self/properties/methods
 class Person:
 
@@ -9,10 +10,10 @@ class Person:
 		self.age = age
 
 	def say_name(self):
-		print 'My name is %s' % self.name
+		print('My name is %s' % self.name)
 
 	def say_age(self):
-		print 'My age is %d' % self.age
+		print('My age is %d' % self.age)
 
 	def have_birthday(self):
 		self.age += 1

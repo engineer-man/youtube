@@ -1,3 +1,4 @@
+from __future__ import print_function
 import requests
 import os
 import random
@@ -22,4 +23,4 @@ for name in names:
 		'kjauysd6sAJSDhyui2yasd': password
 	})
 
-	print 'sending username %s and password %s' % (username, password)
+	print('sending username %s and password %s' % (username, password))
