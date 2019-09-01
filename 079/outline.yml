@@ -1,0 +1,98 @@
+criteria:
+    install:
+        - presence of a gui
+        - ease of navigation through install screens
+        - installation time
+    software:
+        - how much preinstalled software is there
+        - how much of it is worthless and bloat
+        - how much does it resemble windows/macos/etc
+        - accessibility of new software
+    community:
+        - are there release schedules
+        - do they adhere to release schedules
+        - community size
+        - availability of support
+distros:
+    kubuntu:
+        install: 10/10
+            - good: easy to use gui
+            - good: quick install
+        software: 9/10
+            - good: contains right amount of software, no real bloat
+            - good: huge amounts of software available via apt
+            - good: downstream of debian, so fully supports .deb packages
+            - neutral: lots of 'k' branded software, but not bloat
+        community: 9/10
+            - good: very large community with very active askubuntu stack site
+            - good: reliable six month release schedule
+            - good: reliable biennial long term support release cycle
+            - bad: canonical, the steward of ubuntu gnome, sometimes
+                   meddles in kubuntu business
+    elementary-os:
+        install: 10/10
+            - good: easy to use gui
+            - good: quick install
+        software: 6/10
+            - good: beautiful desktop environment
+            - good: huge amounts of software available via apt
+            - good: downstream of debian, so fully supports .deb packages
+            - neutral: takes design cues from macos
+            - neutral: contains very little software by default
+            - bad: contains no modern browser by default
+            - bad: has pay-what-you-want appcenter. since linux is free and the
+                   os is free, paid software gives windows/mac vibes and is
+                   fairly counter to the objectives of foss
+        community: 7/10
+            - good: fairly active elementaryos stack site
+            - neutral: no concrete release schedule
+            - neutral: community not nearly as large as others
+    manjaro:
+        install: 9/10
+            - good: easy to use gui
+            - good: quick install
+            - good: is basically arch linux without the hassle
+            - neutral: there is no install option on boot. it goes to livecd
+                       then an installer in launched optionally. could confuse
+                       new users
+        software: 10/10
+            - good: contains right amount of software, no real bloat
+            - good: contains ms office online, windows converts will be happy
+            - good: since manjaro is downstream of arch, manjaro has access to
+                    a large amount of software from official arch channels as well
+                    as the aur
+        community: 9/10
+            - good: rolling releases are used effectively removing the need to ever
+                    reinstall a system
+            - good: plenty of community resources
+            - neutral: because of rolling releases, release dates are not concrete
+    fedora:
+        install: 9/10
+            - good: easy to use gui
+            - good: quick install
+            - neutral: there is no install option on boot. it goes to livecd
+                       then an installer in launched optionally. unlike manjaro
+                       it's pretty obvious to pick live/install after boot
+        software: 6/10
+            - good: software is usually more stable versions
+            - neutral: contains very little software by default
+            - neutral: uses gnome by default which is not the best
+            - bad: not the best availability of software
+        community: 9/10
+            - good: is one of the oldest distros and therefore has countless resources
+            - good: mostly reliable six month release schedule
+    mint:
+        install: 9/10
+            - good: easy to use gui
+            - good: quick install
+            - good: officially supports multiple desktop environments
+            - neutral: there is no install option on boot. it goes to livecd
+                       then an installer in launched optionally. could confuse
+                       new users
+        software: 9/10
+            - good: contains right amount of software, no real bloat
+            - good: huge amounts of software available via apt
+            - good: downstream of debian, so fully supports .deb packages
+        community: 8/10
+            - good: plenty of community resources
+            - good: good size community
