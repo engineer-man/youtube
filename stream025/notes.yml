@@ -1,0 +1,42 @@
+meta:
+    - break
+    - 250k vid
+    - 1yr anniversary of discord, team, emkc, etc.
+    - new live stream schedule
+    - new artwork
+    - new equipment
+
+http servers:
+    apache:
+        - free and open source
+        - most popular, but is losing ground to nginx
+        - xml style syntax
+        - vast majority of php sites use apache due to mod_php
+        - extensible through apache modules (dynamically loaded)
+        modes:
+            - prefork - one child process per request
+            - worker - one child process per worker, one child thread per request
+            - event - same as worker but better efficiency at long-lived conns
+    nginx:
+        - free and open source*
+        - *has a paid commercial version with additional features
+        - 2nd most popular, gaining ground on apache
+        - simpler syntax resembling a basic programming language
+        - has reasonable support for load balancing*
+        - extensible through nginx modules (dynamically loaded)
+        mode of operation:
+            - starts configurable number of worker processes (or auto)
+            - new thread with low memory footprint per request
+    lighttpd:
+        - free and open source
+        - not very popular, but represents a good option if not apache/nginx
+        - custom syntax which is simpler than apache but not as simple as nginx
+    iis:
+        - backed by microsoft
+        - tightly integrated into microsoft workflows
+        - uses iis manager (does not involve cli, people may like this)
+        - common for .net and classic asp sites
+        - can be used for static sites
+        - can be used for non-microsoft stuff, php for example
+    arguments:
+        - apache vs nginx
