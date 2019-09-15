@@ -1,0 +1,6 @@
+install:
+    linux/mac/win: https://www.rust-lang.org/tools/install
+commands:
+    - rustc - compile a rust program
+    - cargo init - start a new cargo project
+    - cargo run - run your program

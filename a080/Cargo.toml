@@ -1,0 +1,7 @@
+[package]
+name = "a080"
+version = "0.1.0"
+authors = ["Engineer Man <em@engineerman.org>"]
+
+[dependencies]
+log = "0.4.7"
