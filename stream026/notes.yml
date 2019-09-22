@@ -1,0 +1,81 @@
+meta:
+    - 250k vid
+    - new live stream schedule
+    - fan project review (projectreview@engineerman.org)
+    - rust series
+    - no more verified checkmark
+    - washed out thumbnails
+
+talking points:
+    relevancy:
+        android:
+            - alive and well
+            - ~76% market share globally
+            - essential to target everywhere
+        ios:
+            - alive and well
+            - ~23% market share globally
+            - essential to target in countries not sensitive to price
+        everything else:
+            - dead
+            - ~1% market share
+            - might not be worth targetting
+        important notes:
+            - android/ios is closer to 50/50 in america
+    fragmentation:
+        ios:
+            - single vendor, apple
+            - single design scheme
+            - large percentage run latest ios days after release
+              which is due largely to distribution from a single source
+        android:
+            - several vendors, google, lg, samsung, etc.
+            - each vendor has their own version of "android"
+            - phones may never get updates, updates may arrive late,
+              updates may not even be the latest version
+    development:
+        plain old native:
+            android:
+                - android studio
+                - java or kotlin
+                - xml style ui definitions
+                - maximum performance
+            ios:
+                - xcode
+                - previously objective c
+                - currently swift
+                - visual builder
+                - maximum performance
+        cross platform native:
+            react native:
+                - uses web technologies
+                - uses commonly known react
+                - still produces real native app
+                - builds to both android and ios
+                pitfalls:
+                    - doesn't implement 100% of everything from both platforms
+                    - apps may not look identical between platforms
+            flutter:
+                - newer, but promising
+                - uses lesser known language called dart
+                pitfalls:
+                    - doesn't implement 100% of everything from both platforms
+                    - apps may not look identical between platforms
+        game:
+            overall notes:
+                - games don't use native ui elements so cross platform is
+                  much easier
+            unity:
+                - popular, free under a certain revenue ceiling
+                - variety of platform support including android/ios
+            unreal:
+                - free under $3k then 5% royalty
+                - variety of platform support including android/ios
+        html5:
+            pros:
+                - cross platform
+                - uses web technologies (ease of dev)
+            cons:
+                - uses web technologies (subpar performance relative
+                  to native)
+                - depending on os version, may not support multithreading
