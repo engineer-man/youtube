@@ -1,0 +1,63 @@
+meta:
+    - new question system
+    - 250k milestone hit
+    - stickers
+    - fan project review (projectreview@engineerman.org)
+    - rust series
+
+talking points:
+    vendors:
+        top tier:
+            - full suite of services
+            - high pricing
+            - ex. google gcp, amazon aws, ms azure, ibm, etc.
+        mid tier:
+            - most essential services
+            - competitive pricing
+            - ex. digital ocean, linode, dotblock, etc.
+        low tier:
+            - virtual machines only
+            - cheap pricing
+            - dreamhost, bluehost, godaddy, hostgator, etc.
+    hosting types:
+        fully dedicated server:
+            - physical hardware deployed for one client
+            - everything is built to spec and priced accordingly
+            - highest cost
+            - 100% of ram usable
+            - 100% of cpus usable
+        virtual private server:
+            - physical hardware is divided up and virtualized
+            - resulting virtual machine fully owned by one person
+            - pay only for what you need
+            - competitive cost
+        shared server:
+            - physical hardware deployed and shared
+            - servers could house potentially 100's of clients
+            - resources not guaranteed
+    essentials:
+        virtual machines:
+            - mostly linux, sometimes windows
+            - windows not likely to be available at low/mid tier hosts
+            - usually newest images for leading distributions
+            - ubuntu server, debian, and centos all but guaranteed to be present
+            - some hosts offer a bring-your-own-image functionality
+            - resizing generally occurs on demand
+        block storage:
+            - expandable storage that can be attached to machines
+            - sometimes option exists to mount read only to multiple
+            - usually appears as if it were a separate drive
+        ip addressing:
+            - auto assigned ips at creation
+            - optional floating/static ips on demand
+        bandwidth:
+            - sometimes bandwidth is included with a virtual machine
+            - sometimes bandwidth is billed per gb outbound
+        scalable object storage:
+            - infinitely scalable (as far as you're concerned)
+        dns:
+            - responsible for resolving domain names to ips
+            - can either be where a domain name is registered or managed by a host
+        firewalls:
+            - might have an option to manage with host
+            - otherwise, must be managed with iptables/firewalld/etc
