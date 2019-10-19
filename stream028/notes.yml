@@ -1,0 +1,24 @@
+meta:
+    - new question system
+    - stickers (circle ones)
+    - fan project review (projectreview@engineerman.org)
+
+assumptions:
+    - you've looked into at least one other language
+before:
+    - is there a better language to learn
+    - is it the right language for your use case
+    - is your job making you use language x
+    - versioning
+during:
+    goals:
+        - build software that functionally works
+        - prefer clarity over efficiency
+    strategies:
+        - work towards a new stable understanding
+        - essentials - output/variables/control flow
+        - draw parallels between languages
+        - avoid 3rd party modules
+        - i don't know ruby, i know rails
+        - make use of the official docs
+        - make use of google
