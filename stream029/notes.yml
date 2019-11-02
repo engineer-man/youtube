@@ -1,0 +1,40 @@
+meta:
+    - new question system
+    - stickers for sale
+    - fan project review (projectreview@engineerman.org)
+
+why:
+    - create new interfaces
+    - create new integrations
+    - curiosity
+    - security auditing
+methods (in order of difficulty):
+    web app:
+        - super easy
+        - watching chrome dev tools often enough
+        - everything happening in plain sight
+        - common with ip cameras
+    mobile app (mitm):
+        - sometimes super easy
+        - mature software available, mitmproxy
+        - on unrooted phones, pi in the middle might be necessary
+        - involves hijacking https traffic in transit
+        - can be thwarted by cert pinning and/or peer verification
+    mobile app (mitm, pinned certs):
+        - sometimes super easy
+        - use objection to disable cert pinning
+        - try previous again
+    mobile app (above doesn't work):
+        - hard
+        - frida inspection & instrumentation
+        - hook into various parts of the app to read output
+        - much easier with a rooted phone
+        - without root, only patched apk is possible
+    examine firmware (freely available):
+        - varying degree of difficulty
+        - obfuscated/encrypted firmware adds new challenges
+    examine firmware (get from device itself):
+        - usually hard, sometimes impossible
+        - must first break device out of case, usually ruining it
+        - if successful, must locate uart pads
+        - break out the solder gun
