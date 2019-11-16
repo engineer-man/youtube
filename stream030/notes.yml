@@ -1,0 +1,65 @@
+meta:
+    - new question system
+    - stickers for sale
+    - fan project review (projectreview@engineerman.org)
+
+blockchain itself:
+    types:
+        centralized:
+            - less common
+            - good option when chain/network control is necessary
+            - chain controlled by one organization
+            - can suffer from trust issues
+            - sometimes necessary if regulatory frameworks exist
+        decentralized:
+            - most common
+            - no central ownership/control
+            - network must agree on everything (protocol, algorithm, etc.)
+            - chain exists on an unlimited number of nodes
+    forks (decentralized only):
+        soft:
+            - unanimous consent/non-political changes
+            - routine, usually for security matters
+            - occurs at pre-defined block height
+            - only one chain exists after fork
+        hard:
+            - non-consensual changes
+            - results typically from disagreement over technology direction
+            - two chains exist after fork
+    operational components:
+        blockchain:
+            - immutable ledger of blocks
+            - each block contains a bunch of transactions (count varies)
+            - "transaction" is a generic term referring to money, apps, whatever
+            - each block contains info about the previous block (except genesis block)
+            - each block only valid after proof of work occurs (immutability)
+        nodes:
+            - downloadable software, written in various languages
+            - communicates with other nodes on the network
+            - maintains a full copy of the blockchain
+            - receives new blocks and validates that pow has been done
+            - transmits new blocks after mining/pow
+        wallet (crypto only):
+            - consists of a private key
+            - unlimited addresses generated from this private key
+            - inputs and outputs determine balance
+            - can publish transactions into a network
+        miners (which are also nodes):
+            - responsible for confirming transactions
+            - performing computationally intensive "work"
+            - this work generally consists of hashing a block's header + nonce
+            - rewarded with newly minted coins and tx fees
+            - determines which chain is valid at a hard fork
+ethereum:
+    open platform:
+        - allows developers to build things on top of ethereum
+    currency utility:
+        - has the same currency utility as, say, bitcoin
+        - treats this functionality as one "app"
+    distributed apps (dapps):
+        - generic platform for various applications
+        - uses custom programming language (solidity)
+        - code, or contracts, are published into the blockchain network
+        - each node operates an ethereum virtual machine for execution
+        - apps can access/interact with other apps
+        - many apps are underpinned by the ethereum currency
