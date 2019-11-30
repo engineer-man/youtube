@@ -1,0 +1,86 @@
+meta:
+    - stickers for sale
+    - fan project review (projectreview@engineerman.org)
+
+what is scale:
+    - double the users = double the demand
+    - coping with additional computational needs
+    - coping with additional storage needs
+    - coping with more complicated backups
+goals of operating at scale:
+    - maintaining fast response times
+    - maintaining high reliability/availability
+    - maintaining durability of information
+    - maintaining failover infrastructure
+    - only having to engineer solutions once
+needs based:
+    - do you need it?
+    - does your demand scale with users?
+    - how important is your application to your business?
+concerns:
+    network scaling:
+        - make connections from users reach a server
+        challenges:
+            - introduction of > 1 server means network scaling necessary
+            - cost, hardware isn't cheap
+            - applications need to be stateless
+            - socket connections may go to different servers
+        options:
+            - software load balancing
+            - hardware load balancing
+            - managed load balancing
+            - round robin dns to load balancers
+            - geo specific round robin dns to load balancers
+    computation:
+        - service the request the user has made
+        challenges:
+            - one server cannot handle everything forever
+            - applications need to be stateless
+            - socket connections may go to different servers
+            - > 1 server can no longer use file sessions
+        options:
+            - increase server size (cores and ram)
+            - clone servers and put them behind load balances
+            - offload processing to serverless architecture
+    storage:
+        - storage of user data, content, and otherwise
+        challenges:
+            - serving global audiences requires duplication
+            - when drive max capacity is reached, it gets tough
+        options:
+            - increase drive capacity of single machine
+            - distribute data across multiple machines
+            - use "infinitely scalable" managed storage
+    databases:
+        - maintenance of schema and/or schemaless databases
+        challenges:
+            - one database server cannot service load forever
+            - cluster configuration often not straight forward
+            - sharding sometimes requires application level changes
+        options:
+            - database clustering
+            - database sharding
+            - use managed solutions
+    databases (design):
+        - choosing the right tool for the use case
+        - accounting for the expected read/write ratio
+        challenges:
+            - tech needs are sometimes wrong or suboptimal
+            - scalability differs between products
+            - in combination environments, mechanisms can get complex
+        options:
+            - relational, acid compliant
+            - schemaless, sharded, highly scalable
+            - combination
+    failover/disaster/backups:
+        - keeping services up when hardware fails
+        - restoring data when hardware fails
+        - restoring data due to loss from malice
+        challenges:
+            - dealing with insane amounts of data is never quick
+            - downtime = loss of $$$
+        options:
+            - maintain hot spares of application servers across regions
+            - maintain snapshots of application servers
+            - maintain replicated databases across regions
+            - perform full and differential backups from these databases
