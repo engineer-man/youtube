@@ -202,6 +202,44 @@ void ht_dump(ht_t *hashtable) {
     }
 }
 
+void ht_destroy(ht_t *hashtable)
+{
+    if(!hashtable) return;
+
+    size_t i = 0;
+    if(hashtable->entries)
+    {
+        //Free all entries
+        while(i < TABLE_SIZE)
+        {
+            if(hashtable->entries[i])
+            {
+                if(hashtable->entries[i]->key)
+                {
+                    free(hashtable->entries[i]->key);
+                    hashtable->entries[i]->key = NULL;
+                }
+                if(hashtable->entries[i]->value)
+                {
+                    free(hashtable->entries[i]->value);
+                    hashtable->entries[i]->value = NULL;
+                }
+                free(hashtable->entries[i]);
+                hashtable->entries[i] = NULL;
+            }
+            i++;
+        }
+        //Free the entry list pointer
+        free(hashtable->entries);
+        hashtable->entries = NULL;
+    }
+
+    //Free the hashtable pointer
+    free(hashtable);
+    hashtable = NULL;
+    return;
+}
+
 int main(int argc, char **argv) {
     ht_t *ht = ht_create();
 
@@ -214,6 +252,7 @@ int main(int argc, char **argv) {
     ht_set(ht, "name7", "kalix");
 
     ht_dump(ht);
+    ht_destroy(ht);
 
     return 0;
 }
