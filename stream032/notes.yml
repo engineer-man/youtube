@@ -1,0 +1,72 @@
+meta:
+    - new slogan (Engineering Communicated with Unparalleled Clarity)
+    - stickers for sale
+    - fan project review time running out (projectreview@engineerman.org)
+    - 300k video (i swear it's not a meme)
+    - advent of code
+
+tool goals:
+    - don't reinvent the wheel
+    - software dev is expensive
+    - time matters
+my personal selection criteria:
+    - does this tool do everything i need?
+    - am i going to have to migrate away from this tool is 3-5 years?
+    - for paid tools, is there additional costs associated with the use of this tool?
+    - is it feasible to build this tool myself (core vs full)
+broad considerations:
+    - cost
+    - license
+    - maturity
+    - open/closed source
+    - module systems
+    - maintenance/development
+    - support
+    - stackoverflow
+cost:
+    - paid stuff not always better
+    - paid stuff not always necessary
+    - paid stuff depending on the tool can get costlier over time
+license:
+    paid product licenses:
+        - concerns generally around how and when something can be used
+    open source licenses:
+        - some licenses require open sourcing your own code, such as agpl
+          this is obviously bad if you are making a proprietary product
+        - fortunately majority of open source software is licensed
+          in a permissive way, apl, mit, bsd, etc
+        - google v oracle
+maturity:
+    - users of open source software are, in a way, also the testers
+    - newer tools has more bugs and security problems
+    - avoid hype tools unless stability is not an issue
+    - stars on github a good indicator of popularity and use
+    - contribution velocity, new/resolved issues, and pr's also a good indicator
+open/closed source:
+    open source:
+        - open source has a major advantage in that it can be modified
+        - people often benefit from tools that have huge backing
+          ex. facebook's react, twitter bootstrap, etc.
+        - incentive driven development
+    closed source:
+        - there's no real reason to prefer closed source, this is mostly
+          a byproduct of purchasing a product
+module systems:
+    - such as npm, pypi, rubygems, composer, maven, etc
+    - sometimes hides the maturity of software
+    - has been hijacked by malicious actors
+maintenance/development:
+    - beware of abandoned projects or soon to be abandoned projects
+    - see if the project has a roadmap
+    - check release history to gauge release schedules
+    - see if they strictly follow semver
+support:
+    - open source software support typically limited to community support
+    - open source software occasionally has a paid offering which
+      comes with a higher degree of support
+      ex. redhat, nginx+, mysql standard/enterprise
+    - paid and closed source software usually comes with great support
+stackoverflow:
+    - memes
+    - code taken from stackoverflow should be understood before use
+    - you shouldn't compose your whole application from stackoverflow
