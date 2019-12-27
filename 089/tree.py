@@ -53,10 +53,10 @@ for i, c in enumerate(tree):
         blue.append(i)
         tree[i] = '⏺'
 
-ty = threading.Thread(target=lights, args=('yellow', yellow))
-tr = threading.Thread(target=lights, args=('red', red))
-tg = threading.Thread(target=lights, args=('green', green))
-tb = threading.Thread(target=lights, args=('blue', blue))
+ty = threading.Thread(target=lights, args=('yellow', yellow), daemon=True)
+tr = threading.Thread(target=lights, args=('red', red), daemon=True)
+tg = threading.Thread(target=lights, args=('green', green), daemon=True)
+tb = threading.Thread(target=lights, args=('blue', blue), daemon=True)
 
 for t in [ty, tr, tg, tb]:
     t.start()
