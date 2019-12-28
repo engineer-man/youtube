@@ -1,0 +1,63 @@
+meta:
+    - new slogan (Engineering Communicated with Unparalleled Clarity)
+    - stickers for sale
+    - 300k video (i swear it's not a meme)
+    - advent of code
+
+projects:
+    people detector by humandecoded:
+        - https://github.com/humandecoded/People-Detector
+        - looks at many different file types
+        - logs humans detected
+    http garage opener and car starter by russian hacker:
+        - opens garage door over the internets
+        - starts car over the internets
+    blackjack by halfpint24:
+        - https://github.com/halfpint24/Blackjack
+        - java swing gui
+        - good adherance to rules
+    checkbox party pack by joosthoi1:
+        - https://github.com/joosthoi1/checkbox-party-pack
+        - everything based on checkboxes
+        - tetris, minesweeper, imgtocheck, and more
+        - has launcher
+    ydotool by harryausten:
+        - https://github.com/harryausten/ydotool
+        - derivitive of xdotool
+        - uses uinput instead of x server
+    keybored by esinlayo:
+        - https://keybored.fun
+        - simple typing challenge
+        - single or multiplayer
+        - react app with backend integration
+        - high scores
+    employee office status by boesiii:
+        - https://github.com/boesiii/employee-office-status
+        - tkinter based timesheet tool
+        - saves history to files
+        - persists data across loads
+    led cube project by marten:
+        - six led grids in a cube which does things
+        - show pictures
+    mps linear programming converter by thanosa:
+        - https://github.com/thanosa/mps-linear-programming-converter
+        - complex parser
+    just slide game by aditya chaudhary:
+        - https://www.kongregate.com/games/AdityaChaudhary/just-slide
+        - https://www.kongregate.com/games/AdityaChaudhary/just-slide-2
+        - fun puzzle game to color tiles
+        - wasn't clear to me at first the point of the game
+          but then it started making sense
+    tachikoma by datapoke:
+        - https://github.com/datapoke/tachikoma
+        - distributed messaging system
+        - very complex
+    offline crates index by martynp:
+        - https://github.com/martynp/offline_crates
+        - allows predownloading a rust crates
+        - cool idea for those with offline applications
+    explore by KILLinefficiency:
+        - https://github.com/KILLinefficiency/Explore
+        - small data manager
+        - repl and cli facilities for working with an
+          encrypted data store
