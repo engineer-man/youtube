@@ -1,0 +1,75 @@
+terms/acronyms:
+    ajax/xhr:
+        - ajax = asynchronous javascript and xml
+        - generic concept involving transferring xml via javascript async
+        - xhr = xml http request (XMLHttpRequest)
+        - javascript object facilitating async requests
+        - is not just xml as the name so wrongfully implies
+    api:
+        - api = application programming interface
+        - sometimes refers to web services (rest api)
+        - sometimes refers to descriptions of module functionality
+    backend:
+        - web context, refers to server-side code and logic
+        - everything else, refers to underlying code and logic
+    the cloud:
+        - refers to virtual machines and other services rented to the public
+        - the cloud hides the idea of hardware pretty much entirely
+    compiler:
+        - software that converts human readable code to machine code
+    cron:
+        - gets name from greek god chronos
+        - is the most common method of running code at scheduled times
+        - cronjobs (commands) are schedule inside a crontab (the list of commands)
+        - is a linux thing
+    devops:
+        - devops = development operations
+        - refers to teams that bridge the gap between development
+          and it concerns
+    editor:
+        - a program used to edit code without integrations
+        - ex. atom, vscode, vim, nano
+    encryption:
+        - refers to a process of converting data to scrambled data
+        - uses a key to determine how to scramble
+        - can be reversed with said key
+    frontend:
+        - refers to the portion of a program the user interacts with
+    glue code:
+        - most commonly refers to new code acting as an adapter to old code
+    hash:
+        - refers to a process of converting data to a fixed set of characters
+        - avalanche effect
+        - cannot be reversed except by brute force
+    ide:
+        - integrated development environment
+        - contains everything an editor does
+        - but also integrates with other things (db, test runner, etc.)
+    json:
+        - json = javascript object notation
+        - refers to the generic collection of data used for storing,
+          transporting, and other purposes
+        - is also fully compatible with javascript without modification
+    low level/high level language:
+        - not about how good it is
+        - low level refers to a language that is closer to the hardware
+        - high level refers to a language that is more abstracted and hides
+          much if not all low level interaction
+    regex:
+        - regex = regular expressions
+        - refers to a pattern matching and text processing syntax
+    repl:
+        - repl = read-eval-print-loop
+        - refers to an interactive interpreter at a language which takes a line of code,
+          processes it, prints the result, and then repeats
+    source control:
+        - refers to various software responsible for storing change history of files and
+          facilitates the simple collaboration with other developers
+        - ex. git, mercurial, perforce, tfs, and less commonly svn and cvs
+    transpiler:
+        - similar to compiler, but changes human readable code into other
+          human readable code
+    vm:
+        - vm = virtual machine
+        - refers to a typically linux machine running sandboxed within
+          another linux machine

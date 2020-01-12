@@ -1,0 +1,30 @@
+most common types:
+    - tinyint (8-bit integer)
+    - int (32-bit integer)
+    - bigint (64-bit integer)
+    - decimal
+    - varchar (variable length string)
+    - text (string max size 64k)
+    - mediumtext (string max size 16mb)
+    - date
+    - time
+    - datetime
+attributes:
+    - auto_increment
+    - null
+    - not null
+    - default
+    - unique
+primary key:
+    - must be unique and not null
+    - is typically auto incrementing
+indexes:
+    - only index what you plan to query on
+    - indexes can be composite (contain multiple columns)
+important notes:
+    - use innodb in 2019
+    - only type determines value range for int
+    - integer types can be unsigned
+    - text types store pointer to actual data
+    - varchar max size based on max row size
+    - parens after integer only for display width
