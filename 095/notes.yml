@@ -1,0 +1,12 @@
+reasons:
+    resource management:
+        - top tier
+        - display managers give even more flexibility
+    software:
+        - majority comes from either a repo or github
+    no cost/batteries included:
+        - free
+        - no cost for extra features
+    unified environment:
+        - work on linux, deploy to linux
+        - easier to interact between linux machines
