@@ -1,0 +1,121 @@
+meta:
+    - 300k and 300k video
+    - new stream format
+    - finishing up database stuff then linux main focus on videos in future
+
+What's an easy way to undo previous commit, add a few more things and
+re:commit so as to keep commit history "cleaner"? (GBU Prof. Wally)
+    - the best way is git reset --soft HEAD^ which will undo the last commit
+      and place all the changed files back in your working tree in the same
+      state they were at just before commit
+
+Are you a Git Flow fan, Github Flow fan, modified versions of these?
+Or something else? (GBU Prof. Wally)
+    - im a gitflow fan in general
+
+How to correct unrelated git histories? (pizza)
+    - on private branches, rebase and fix the problems, then force push
+    - on public branches, same method but understand the consequences
+
+How often should changes be committed, and with that how many
+changes should be contained within a commit? (Superchump123)
+    - frequency of commits is less important than the messages
+    - i like to commit when i've accomplished something useful worth committing
+    - i will also commit when i want my progress to be stored
+    - commits can always be squashed at the end
+
+I pull code and work on several of the files. I realize that one
+of the files just needs a do over. What is the "best" way to get
+a clean copy of that single file? (unknown)
+    - the best and only way to accomplish this with git is with git checkout
+      and/or git reset
+
+Is there a way to git diff and see changes side by side easily? (unknown)
+    - easy way directly through git? no
+    - external programs exist
+    - with gui -- meld
+    - without gui -- vim
+
+rebase or merge. Is there a simple rule to follow? (unknown, deemo, Jameson)
+    - one can't replace the other
+    - the real question is whether to merge -or- rebase then merge
+    - rebase handy to incorporate changes from a base branch into
+      your feature branch
+
+How do you manage branches effectively? (unknown)
+    - for sole developers, just name them appropriately
+    - for teams, use a tool to assign a number to each feature and then
+      proceed to use this number in the branch name
+
+How do you decide to move code to a new repository or simply keep it in a
+separate project in the same repository? (unknown)
+    - sometimes it's obvious (android in ios, ios in web, web in android)
+    - when the code seems to be related, i look at several factors including --
+      how it's deployed, who will work on it, access/restrictions, and
+      how the project is organized
+
+Why git over SVN and Mercurial? (unknown)
+    - over svn -- git is distributed, svn is not
+    - over mercurial -- preference
+
+What's the point of origin? (unknown)
+    - this will just refer to the place you cloned a repo from
+    - can be changed later via git remote set-url origin
+
+Opinion on new github cli (unknown)
+    - unfortunately i haven't checked it out yet
+
+What should you use branches for? (joosthoi)
+    - branches are great for several cases, including
+    - experimenting with changes that might end up being tossed out
+    - working on multiple features at the same time
+    - sharing code with other people without affecting master branch
+    - isolating code for review
+
+How do you effectively program with others using git? (Haukerino)
+    - start by protecting master branch and limit who can merge to it and how
+    - for those that can't merge directly to master, create a process
+      for how they will
+    - develop all features on indepdent branches
+    - merge completed features into master and discard old feature branches
+
+Can I version control my home directory and what problems could I run into? (Grant)
+    - interesting concept, i can envision several challenges
+    - security sensitive info may unknowingly get committed
+    - if your home directory is 300gb, your repo will be too (or close to it)
+    - popular services (github, bitbucket, gitlab) cap file sizes and/or
+      repo sizes
+    - if above can't be used, you'll need to operate your own git server
+    - binary files aren't diffed. one small change to a large binary results in a
+      massive commit
+
+Merging and Stashing and what the heck does that mean? (Kalix)
+    - merging means take the contents of one branch and add it to another branch
+    - this is done either with a fast-forward (branch b contains
+      all commits branch a has); or
+    - this is done with a merge (branch a has commits branch b doesn't)
+    - stashing is adding things to your stash
+    - the stash can be thought of as a temporary fifo stack containing commits
+
+What's your workflow for merging many commits from a feature branches
+into the main development/master branch? and how about squashing vs.
+rebasing, what are the reasons for using one or the other? (whbrown)
+    - if i want a clean history, i'll squash commits
+    - if i don't, i'll just merge and not think twice about it
+    - on unshared feature branches, i like to rebase prior to merge
+
+How to organise workflow in a local git repo with multiple remotes? (saki)
+    - for mirrors, just add the mirror and be done
+    - for forks, adding the remote for the original repo is handy
+      for pulling new code
+
+Does git create copies of the project at different commits so when we rollback to
+the previous version it simple uses that copy? (ayush)
+    - what it does is create differences between one commit and the next
+    - in this way, the project can be viewed at the state it was at any commit
+      at any point in history, at any time
+    - rolling back a repo involves simply discarding one or more commits
+
+unrelated questions:
+    - What jobs have you had (unknown)
+    - What's the best way to learn at home in high school (unknown)
