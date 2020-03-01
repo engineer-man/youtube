@@ -1,0 +1,62 @@
+indexes:
+alter table table_name add index index_name (column);
+
+
+instead of:
+posts table
+    - post_id
+    - title
+    - author_name
+
+do:
+posts table
+    - post_id
+    - title
+    - author_id
+authors table
+    - author_id
+    - name
+
+
+to log queries, update my.cnf and add/change
+general_log_file = /var/log/mysql.log
+general_log = 1
+
+
+bad naming:
+posts table
+    - ID
+    - title
+    - contentBody
+    - created_at
+
+also bad:
+posts table
+    - post_id
+    - post_title
+    - post_content_body
+    - post_created_at
+
+good naming:
+posts table
+    - post_id
+    - title
+    - content
+    - created_at
+
+
+five reindexes
+insert into whatever values (default, 1);
+insert into whatever values (default, 2);
+insert into whatever values (default, 3);
+insert into whatever values (default, 4);
+insert into whatever values (default, 5);
+
+one reindex
+start transaction;
+insert into whatever values (default, 1);
+insert into whatever values (default, 2);
+insert into whatever values (default, 3);
+insert into whatever values (default, 4);
+insert into whatever values (default, 5);
+commit;

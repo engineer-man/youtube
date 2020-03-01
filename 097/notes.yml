@@ -1,0 +1,22 @@
+tips:
+    use indexes:
+        - index on commonly queried fields
+        - good tradeoff for speed
+    normalize your data and use joins:
+        - store data separate from one another
+        - reference that data with foreign keys
+    use innodb:
+        - myisam going away
+        - innodb all around better
+    enforce data integrity at the db level:
+        - unique constraints
+        - cascade deletes
+    log queries in development:
+        - great to see queries happening in real time
+        - disable in production
+    use consistent naming:
+        - use short, easy to type field names
+        - whichever naming format you choose, do it everywhere
+    use transactions for bulk insert:
+        - each insert triggers a reindex, this gets by that
+        - no visibility of new data mid insert
