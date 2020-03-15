@@ -41,15 +41,6 @@ setting permission examples:
 special rules:
     - root has access regardless
 
-
-
-
-
-
-
-
-
-
 attributes:
     - a = makes a file append only (only root can do this)
     - i = makes a file immutable (only root can do this)

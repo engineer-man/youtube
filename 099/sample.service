@@ -1,0 +1,10 @@
+[Unit]
+Description=Some Really Important Service
+
+[Service]
+Type=simple
+WorkingDirectory=/root
+ExecStart=/root/my_program.sh
+
+[Install]
+WantedBy=multi-user.target

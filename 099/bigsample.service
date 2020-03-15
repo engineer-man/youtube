@@ -1,0 +1,19 @@
+[Unit]
+Description=Some Really Important Service
+Wants=something.service dependedon.service
+Requires=dependedon.service
+After=something.service
+
+[Service]
+Type=simple
+User=root
+Group=root
+Environment=SOMEVAR=someval
+WorkingDirectory=/root
+ExecStart=/root/my_service.sh
+TimeoutSec=30s
+Restart=always
+RestartSec=15s
+
+[Install]
+WantedBy=multi-user.target
