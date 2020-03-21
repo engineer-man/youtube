@@ -1,0 +1,110 @@
+meta:
+    - covid-19
+    - new stream schedule and content
+    - deleting comments on videos
+
+java script its just for websites or can i use it in other sites like
+windows aplication (javier)
+    - javascript use cases far and wide
+    - mobile apps -- react native
+    - desktop apps -- electron
+
+What manner would you use to flow through documentation of JavaScript
+in an efficient manner? (Sr Duckie)
+    - for spec/internals, reference the ecma standards guide
+    - for implementation, use the mdn
+    - for a beginner, start with their articles on syntax
+    - otherwise, review the most popular built-in objects and
+      their class/instance methods
+
+Best java script freamwork to learn for web dev and if you can
+suggest some references or courses (Azer, saki)
+    - js frameworks are dime a dozen
+    - express.js exceedingly popular as a router (saki)
+    - best reference for frameworks is that framework's docs
+
+difference between .then() and await and their usage respectively (saki)
+    - both use promises
+    - ref then.js
+
+explanation of an event loop (saki)
+    - ref event.png
+
+await or .then() for using mongoose (saki)
+    - more preference than anything
+    - any place there's a promise, .then() or await can be used
+
+how to keep your javascript clean and readable. (every piece of js
+i have seen has been turned into an unreadable mess) (pizza)
+    - of course, bad programmers produce bad code in any language and
+      there's not much that can be done about that
+    - if not due to the programmer, the code was likely legacy js for
+      the browser. js has evolved over time.
+    - assuming modern js, use async/await for async stuff and organize
+      code into modules and/or classes
+    - use concise but unconfusing syntax and don't over abstract
+
+Please describe how closures work in a real use case / example (😈)
+-and-
+I know that an inner function can remember a variable from the outer
+function even when the outer function is already executed. How does
+it work actually? (Tanmay)
+    - ref closure.js
+
+How do I do promises & async/await? (🤦‍♀️)
+    - typically anything async will already use promises,
+      so either .then() or await them
+    - to make promises on your own, ref promise.js
+
+Prototypes - plz halp. (🤭)
+    - js didn't always have oop, so prototypal inheritance was used
+
+How to write secure js code (Lionmonster)
+    - generally secure coding practices that apply to other langs apply to js
+    - browser sandbox
+    - xss
+
+Will there be a better solution to how node manages dependencies? (unknown)
+    - github acquired npm and is the default that comes with node.js
+    - npm not perfect, but good enough
+    - yarn another option, but built on npm
+
+With JavaScript being used for both front end and back end, which other
+area of programming could JS start being used for? (Sherpa)
+    - besides the browser, js runs on quite a few systems
+    - i expect js to be used pretty much anywhere except for embedded
+
+The different package managers (npm, yarn) and what sets them apart (Bydon)
+    - npm is original, yarn is new
+    - yarn uses npm
+    - yarn was the first to use lock files, but now npm does
+
+What is the reason for wrapping the entire content of a JavaScript
+source file in a function block? (ProgrammingTiger)
+    - primarily done to prevent scope polution
+    - anything done in a function block that isn't explicitly set as
+      global is local to that function
+
+Can you write an RGB video codec in JS for pixel position it seems
+possible in theory but what would the bitrate/bandwidth looklike?
+Would it compare or compete with H264 or H265 (Zip)
+    - tough question, i've never had this specific use case before
+    - anything other languages can do so can js
+
+Is there anything you'd change about JavaScript from a design
+standpoint? Also, do you think JavaScript would've been where
+it is today had it had a strong type system? (brainplot)
+    - browser js = yes, node.js = no
+    - es6 brought about a basically entirely new language
+    - think strong typing would have held it back. in the mid 90's
+      js needed to be flexible and it needed to be easy to write. if
+      it weren't both of those, i don't think it would have been
+      widely adopted
+
+late adds
+    - What are some tips to write performant JavaScript code by not
+      blocking the event loop for a better User experience. (ayush)
+    - What is the recommended way to read data from files.  Asyc
+      on sync?  Coming from a procedural language processing
+      line by line.  What changes in thinking is needed,
+      if any, for processing data? (kalee)
