@@ -1,0 +1,141 @@
+meta:
+    - covid-19
+    - new stream schedule and content
+
+Difference between bash/zsh/fish/other shells? Does the difference
+really matter? (Shreyas, Kalix, Bydon)
+    - running programs remains the same
+    - difference in scripting and shell built-ins
+    - does it really matter? to me? no. to some? definitely
+
+I have written some effective bash scripts performing different tasks.
+I was considering changing everything over to python based on the
+current environment and hype over python.  Should we simply leave our
+bash scripts in, well, bash or is there a good reason to convert over
+to python? (Unknown)
+    - "if it ain't broke, don't fix it"
+    - let the requirements and business need drive the possibility
+      of refactoring
+
+What are daemons? What are they used for? (Jonathan Li)
+    - another word for a background process
+    - they are designed to run as a background process not attached
+      to any terminal
+    - usually has a `d` suffix
+
+Why does the Linux Command Line feel so much better and/or easier to
+use than either Command Prompt or Powershell? (SuperChump123)
+    - linux/unix were designed with the terminal as a first-class tool
+    - many programs are only available on the command Line
+    - decades of development into command line shells
+    - windows was designed gui first and command prompt is just there
+    - powershell was an afterthought
+    - powershell is the development effort command prompt should have been
+
+Can you show practical examples of Named Pipes and/or when you might
+use custom FD's. Thanks (Kevin C., Shreyas)
+    - personally i've never used them in production (either one)
+    - one use that comes to mind immeidately is allowing two programs to
+      communicate with one another without the use of tcp or flat files
+
+How come in windows there is lots of fail safes to stop people from
+completely destroying their installation but in Linux you can just use the
+command line and do a simple rm -rf command and destroy your
+installation. (Akanate458)
+    - safeguard 1 -- requires sudo to get rid of most important stuff
+    - safeguard 2 -- rm -rf / is not enough, needs --no-preserve-root option
+    - rmdir c:\ /s equally as destructive
+
+Is there any way of obfuscating passwords passed as parameters to
+commands? (Unknown)
+    - even if passwords could be obfuscated, the program would need to
+      understand the obfuscated password and thus the obfuscated password
+      is now basically the password
+    - most programs don't mandate the password being in the command itself
+
+How has cloud changed command line monitoring of systems (w.s.)
+    - question condensed
+    - people pay for resources in the cloud
+    - resources are dedicated
+    - resources may not be what you think they are (physical attach vs nas)
+
+do we still need linux if we have osx? (Unknown)
+    - short answer -- yes
+    - osx has strong ties to unix
+    - linux has strong influence from unix
+    - from a common user perspective, much of the same things can be
+      accomplished on osx as linux
+    - one big difference remains -- apple software is very much closed
+    - linux is an open platform
+
+What is snap and how it works? (saki)
+    - snaps are almost like docker for linux programs
+
+Best unix chad tips and tricks? (saki)
+    - good working knowledge of your chosen shell and scripting
+
+When to know it's appropriate to automate certain action? (saki)
+    - automate when the development time is shorter than manual action
+    - automate when you don't want to forget to do something
+
+I'm really struggling with understanding grub configurations and efi. I have
+a few different drives on my frankenstein-esque setup and I'd like to be able
+to set up grub to give me the option to pick which drive I want at boot(sda,
+sdb, sdc, etc..). I'm just not sure there is a way to do so. My current mode
+of operation is to jam F8 to select a boot device. Not really elegant or
+ideal. (Victor)
+    - grub is a bootloader for partitions on a drive
+    - because grub sits on a drive, it would follow that you must first select
+      a drive
+
+Reverse and dynamic tunnels are pretty confusing to me no matter how many
+times I've tried to understand how it works... (Victor)
+    - ssh -L -- binds a local port to a remote ip:port combo
+    - ssh -R -- binds a remote port to a local ip:port combo
+
+When will you change over to legendary VIM instead of nano? (Totally Not Kev)
+    - vim must improve my productivity to be a viable option
+    - no mouse is a problem
+    - no preference on editor in the cloud
+
+What is the advantages of using the command line over a GUI interface to
+navigate files? (Kalix)
+    - navigating might be slower via cli
+    - searching, processing, etc. way faster via cli
+
+Why was the command line invented? (Kalix)
+    - historical roots
+    - one of the first visual interactive computers was interactive
+      via a terminal
+
+Currently using Ubuntu What would be the next recommended flavour of Linux
+you would recommend. (Francis)
+    - arch linux or linux mint
+
+I keep reading how Linux is compatible with older machines. Considering
+purchasing a new dell machine besides Ubuntu what other flavours would be
+compatible. (Francis)
+    - architecture wise, linux is supported pretty much universally
+    - driver wise, compatibility can be spotty but is still really good
+
+I’m a developer but used windows for work. What Linux flavour would you
+recommend for web and API development (Francis)
+    - my preference for distros when i want to get work done is those
+      which let me get running fast
+    - xubuntu is my goto distro for this
+
+You log into your cloud hosted server.... Something's up. The hairs on
+the back of your neck stand up. Your dog let's out a low confused whimper
+and lifts his head slowly up, looking at you with those eyes - he senses it.
+You sense it. There's a 👻 in the shell... Now what?
+Spend a few minutes talking about what commands you would run if you were
+suspicious the Linux machine you'd just logged into was somehow compromised.
+Explain your reasoning, where you'd start, why, and  to what end would
+ultimately make you trust your machine again. (👻🐕‍🦺⚠️👻🚨👻😳😰👨‍💻🤔👨‍💻🤨🙅‍♂️👨‍💻😌)
+    - run `w` to see if anybody is still logged in
+    - run `last` to see log in history
+    - run `history` to see command history
+    - review the auth/ssh log and look for any accepted sessions
+    - install rkhunter to check for rootkits
+    - check for new users or groups
+    - check authorized_keys file for new public keys
