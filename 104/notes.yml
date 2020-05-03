@@ -1,0 +1,40 @@
+terminology:
+    aot: ahead-of-time
+    jit: just-in-time
+
+types:
+    aot:
+        - compilation takes place prior to running
+        - compilation produces a native executable
+        examples:
+            - c
+            - c++
+            - rust
+            - go
+    pure jit:
+        - compilation takes place as the program is running
+        - source code is converted on the fly to machine code
+        examples:
+            - python (pypy)
+            - javascript (newer versions)
+            - ruby (newer versions)
+            - php (newer versions)
+    interpretation:
+        - compilation never takes place
+        - interpreters interpret source code and produce the desired results
+        - no conversion to machine code occurs
+        examples:
+            - javascript (older versions)
+            - ruby (older versions)
+            - php (older versions)
+    intermediate representation with or without jit:
+        - compilation to bytecode takes place prior to running
+        - compilation produces bytecode designed to be interpreted
+        - various bytecode interpreters are used to perform execution
+        - bytecode intepreters can and usually do jit compile
+          bytecode to machine code
+        examples:
+            - java
+            - c#
+            - c++ (.net)
+            - python (cpython)
