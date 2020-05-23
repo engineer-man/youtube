@@ -1,0 +1,277 @@
+meta:
+    - possible guests on stream
+
+Do you think that i can still be accepted to a computer/programming
+related jobs even tho i didn't finish computer-related courses? And..
+what do you think is the best language to start with in the
+"computer" career? (HoaxSnowden)
+    - yes, development is all about results
+    - as a first language pick something common
+
+How to start freelancing for computer engineering students in
+this pandemic? (Coolgamerboy)
+    - now is a better time than ever since most freelancing
+      happens remotely
+
+I've never worked an office job and I develop for private clients.
+The tasks vary, from simple text format converters to big projects
+like TBs of data analysis that had to be done in ms. I constantly
+feel like I don't know enough or I'm not good enough because I
+don't know how my skills compare vs others (since I've never actually
+worked with other developers). I have huge passion for coding, I've
+completed a CS degree and developing for private clients really
+forces me to educate myself and write clean, maintainable code. Do
+you take on projects that you're not sure how to tackle or that are
+out of your comfort zone? Is that fair to the client? If that is the
+case, would you charge for research and learning or just for actual
+coding (assuming it's hourly)? Do you think that trying to work at
+a company for a while to try to gain experience, learn from others
+would be a good idea? Thanks to you and your team for everything
+you do. I've learnt a lot from you! (realestro)
+    - don't be concerned with how you rank among others
+    - i personally don't try to take projects that are outside of my
+      expertise because project success is your reputation. there's
+      no shame in saying you don't know how to do something.
+    - as long as both parties are ok with the terms, even if those
+      terms are you needing to research stuff and charge them for it,
+      then everything is ok
+    - charging in complicated, comes down to hourly vs fixed
+
+How long would it take an electrical engineer 1 year out of college
+(roughly 3-4 years experience in chemical/refining controls automation)
+with basic programming fundamentals to get to a hireable skill level
+for something like a .Net developer? Also can you speak on the
+differences from dev work to something like systems engineering (Brain)
+    - certainly your degree and experience will give you some clout
+    - development is based on results, companies will expect results
+    - positions vary though
+
+I have a degree in Math and I currently work as a sysadmin. I'm trying
+to break into the software engineering world. I've been doing my best
+to learn python/JavaScript/react, build a portfolio of projects, and
+study interview questions/techniques. Been considering attempting an MS
+in CS. I guess what I need is to find a project that I'm passionate
+about and I'll find work through that (or something). What other skills
+do I need to cultivate/are in high demand? What am I missing? (Nick)
+    - given your degree, current line of work, and desire to go further,
+      you're already on solid footing
+    - first consider if a lateral move (within your company) is possible
+    - if not, you'll want to be familiar with at least one thing in a
+      given stack (ex. linux, js, mysql, html/css)
+
+What is the best thing I can do as a freshman to get a career in
+development and what would you suggest my career be? thanks! (Turt)
+    - not sure if this is freshman in hs or college
+    - either way, start learning a common language like javascript
+      or python
+
+In what ways can a person advertise/promote their open source
+software? (Shreyas)
+    - low hanging fruit includes -- optimizing keywords, having
+      a good readme, having good documentation
+    - as far as where to advertise, i'd start on reddit
+
+What do companies value more, college degree or practical skills? (Shreyas)
+    - when the rubber meets the road, experience beats college
+      degree every time
+    - the one exception is when the position is very academic in nature
+
+I've been consulting and assisting companies with some freelance
+projects and always find it challenging to attach a price / cost to
+time when having to quote on work needing to be done. Is there a
+suggested method like a rule of thumb approach you can suggest
+whenever you look at a project and attaching a cost to it? (Donovan)
+    - assumption -- you don't send out work
+    - one of my rules used to be that i don't do fixed price work
+      that exceeds an estimated $2,000
+    - software developers are optimists and woefully underestimate
+      the time it takes to do things
+
+How does one get started with freelancing? what are some legal
+requirements and how would separate yourself from the crowd of
+thousands of developers? (Ayush, Louis)
+    - join a freelance marketplace (fiverr, upwork, gigster, etc.)
+    - you separate yourself through reviews from past work
+    - this may involve doing a few projects for less than you'd
+      normally charge just to prime the pump
+
+What are some tool that one must familiarize them self with
+when freelancing? (Ayush)
+    - a clock (seriously)
+    - most sites provide a place to collaborate with your client but
+      if they don't, knowing how to set up and use a simple slack
+      workspace is useful
+
+How do decide the "price" of your product? is it done up front
+or is there some form of negotiation. and what are some potential
+drawbacks of doing freelancing? (Ayush)
+    - freelancing is generally either
+    - a) i'll produce x product for y price, or
+    - b) i'll work on x product for y price hourly
+    - lot of factors go into the price
+
+How to establish yourself as a competent freelancer? (saki)
+    - have previous work to show
+
+How would an underaged person get into software development
+(startups, freelancing, corporate)? (saki)
+    - depends on country really, laws may prevent somebody
+      below a certain age of engaging in employment, even
+      contracting
+
+How to find customers if you are specializing in e.g. backend or
+databases? (saki)
+    - finding customers is the problem with virtually any freelancer,
+      business, etc. in existence
+    - easiest way is to join a freelancer marketplace
+
+What would be a polite way of denying a stubborn or careless
+customers? (saki)
+    - pre-requisite - set clear expectations up front of both what
+      the client can expect from you and what you expect from the
+      client
+    - don't take the project if you don't like the terms
+    - if all else fails, just be honest about the problems and,
+      address them.
+
+Is freelance experience going to benefit if you are trying to get a
+job at a company? (saki)
+    - it will but not ask much as a traditional position
+    - freelancing causes you to miss out on important aspects
+      around being in a real development position like collaboration,
+      working with project managers, working with qa, etc.
+
+What technologies and skills are crucial for successful freelancing
+career? (saki, cvekaso)
+    - there aren't any specifically
+    - the need for freelance development is a broad one comprised
+      of virtually every skill
+
+Hi EM, can you mention and discuss about some good Universities in
+The US which are strong in the field of CS?  :D (Mo)
+    - i studied electrical engineering in college
+    - most of my cs knowledge is self-taught so i can't speak too
+      much regarding cs programs, sorry :(
+
+What is your opinion on Julia related to the future business
+integration of the language/replacement of other languages such
+as Python? Do you consider it to be a useful programming language
+to master for future jobs, even if you are not a data
+scientist? (taranbis)
+    - julia is still pretty new, but very promising
+    - i wouldn't be in any real rush to learn it specifically for the
+      purpose of being more likely to find a job
+
+What would be the best approach to finding a job without having
+education (self taught)? What would be the best way to look for
+a job in USA if you do not live there? (Unknown)
+    - in lieu of education, solid experience is key
+    - getting a job in the u.s. if you don't live here is
+      challenging. the best is to do contract work over a
+      freelancing platform
+
+Which areas of software engineering are on the rise and
+which are declining? (SuperChump123)
+    - i think desktop apps represents the largest decline due
+      to maturity of other technologies that can replace them
+    - machine learning is probably the area that is on the biggest
+      rise as its applications are everything from websites, iot,
+      self driving cars, and everything in between
+
+what are useful skills to acquire that are not directly related
+to programming, but would good to have as programmer. (pizza)
+    - time management is important
+    - being able to communicate technical topics to non-technical
+      people also extremely important
+
+Hello dear engineerman, can you be bad at math and still do
+sofware engineering? (Caleb Peretz)
+    - yes, i'm terrible at math and i've done fine
+    - some engineering projects do require a good deal of math and
+      certainly those would be tougher for somebody not so good at math
+    - the vast majority of projects, however, you can get by
+      if you can add, subtract, multiply, and divide
+
+Where you find your "clients" ? I work for a company now, how
+do I get "clients" let's say? there's few sites like freelance.com
+although is very difficult to compete with Indians, where they
+have incredibly low rates. (Unknown)
+    - low rates doesn't immediately mean they'll win all the work
+    - $2/hr is never going to get you a good product
+    - not sure what country you're in, but, if it's the u.s., many
+      companies will look for people in north america only
+
+How to self establish a business as a developer without the
+essential business skills ? (Marketing, sales and customer
+service, Communication and negotiation, Leadership,
+Networking, etc.) (Pedro Bauer)
+    - easiest way is to find a partner that does everything you can't
+    - if being a sole proprietor is the ultimate goal, then you
+      need to educate yourself on the above skills.
+    - if just freelancing is your goal, joining a freelance marketplace
+      will mean the marketing, sales, and networking piece is handled
+
+how do you know if you are ready to freelancing? is there any
+concrete steps of self evaluation or do we just need to dive
+in without having any second thoughts? thank you. (tayfun)
+    - you should first understand what your limits are
+    - freelance projects come in all sizes, shapes, and forms, thus
+      the likelihood of finding one that is a fit for your skills
+      is high
+
+What do you consider to be the most important qualities that a
+client needs to have in order to you want to work with him? (cvekaso)
+    - communication for sure, and you can get a feel of their
+      ability to communicate before you enter into any agreement
+
+How does it feel to be one man army and what are the biggest flaws
+it brings and some of your experiences so far? (cvekaso)
+    - the most prominent challenge is that everything is up to you
+    - control this problem by taking work you can finish on your own
+
+What is your way of thinking and general motto related to choosing
+a career path and what do you follow when making that choice? (cvekaso)
+    - the best career path is the one where you're most satisfied
+
+My senior year of high school is coming up, and college is right
+down the road. I want to start at least an internship early
+to get job experience. A little pay would be nice too. How do
+I go about landing my first internship, if I should even do
+this at all? (Collin Padgett)
+    - the good news about interships is that you don't really need
+      to be proficient in anything
+    - the bad news is the same as the good news
+    - first way - canvass your area and check their websites for
+      open opportunities
+    - second way - network with teachers, friends of your family,
+      etc
+
+If it's not too off topic, I would like to hear some career
+advice for a novice SysAdmin (resources, projects, certifications,
+books,...), or at least a subjective commentary on the trends
+for this kind of jobs. (ProgrammingFarmer (Eric))
+    - linux+, network+, server+ all solid general certs
+    - specific certs exist for the specific systems you're using
+    - most important priority is improving your knowledge
+      of the systems relevant to your position
+
+How to upgrade yourself for FAANG level when you have rudimentary
+experience even though you have worked for a year or two ? Should
+we do projects or DSA ? Also is there any age related stigma in
+the industry ? Also how is cyber security or ethical hacking as
+a career ?  Thanks. (Hope)
+    - big companies have the benefit of having unlimited numbers
+      of people who want to work there so they can be very
+      selective
+    - things that help - education, location, and connections
+    - age generally not a hiring factor assuming you're legally
+      allowed to work
+
+other:
+    - Any information on Jenkins. Do you use it, difficult
+      to learn, good/bad experiences? (Unknown)
+    - Do you prefer the "enterprise" business model that
+      companies often go for? (Unknown)
+    - What would you regard/recommend as useful and general
+      skills or technologies one shall learn? How about
+      recommendations for a C/C++ developer? (taranbis)
