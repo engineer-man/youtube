@@ -37,16 +37,11 @@ while True:
 
         ignore = False
 
-        if black and (r+g+b) != 0:
+        if black == ((r+g+b) != 0) :
             black = not black
             transitions.append(i)
             continue
-
-        if not black and (r+g+b) == 0:
-            black = not black
-            transitions.append(i)
-            continue
-
+            
     start, target1, target2 = transitions
     gap = target1 - start
     target = target2 - target1
