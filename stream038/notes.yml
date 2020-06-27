@@ -1,0 +1,163 @@
+meta:
+    - nothing
+
+Why can't I include more than one image in my Dockerfile? (Shreyas)
+    - probably a misunderstanding on what a dockerfile is
+    - dockerfile describe what an image should look like
+    - they can also describe an entry command once a container
+      is built from that image
+
+How exactly would you go around persistence and managed "permanent
+storage". For now I have just been binding a folder with the
+docker-compose to the container. Would you recommend any
+other ways? (Unknown)
+    - you're already doing it the perfect way
+    - volumes exist to give persistent storage to the container and
+      also to override specific files in the container
+
+What should I remember when deploying a dockerized project to
+production in terms of security and reliability? (kev)
+    - security - expose only ports necessary, keep them on the same
+      virtual network if they only need to talk to eachother
+    - reliability - have a plan if your app crashes or server
+      needs to restart
+
+What are the main differences between application containers and
+OS-level containers e.g., Docker vs LXC/LXD? Could you show a typical
+use case for containers? (Joao)
+    - first important note is that docker uses lxc internally
+    - thus, docker can be thought of as infrastructure around lxc
+
+Is the docker runtime some kind of VM? (semi)
+    - similar, but different
+    - with a vm resources are reserved and an operating system is
+      installed in the traditional way.
+    - with docker, resources are shared between containers and the
+      host
+
+From a dev's perspective, what typical scenarios would you use Docker
+for? Why not vagrant? One big difference between Docker and Vagrant
+is that Docker containers run on Linux, but Vagrant files can
+contain any operating system. (sipcodec)
+    - the reason vagrant works this way is because it creates actual vms
+    - this is also what separates it from docker
+    - why not vagrant? if a full on virtual machine is too heavy and
+      you require a number of containers, docker is probably right for you
+
+Creating Virtual Machines is closer to bare metal and far outperform
+Docker, so why should docker even be considered. (Pyro, semi, others)
+    - the data seems to show something different
+    - most studies concluded that the performance penalty for using docker
+      is more or less nonexistent in all areas other than networking.
+
+Docker is great as a concept but can you give some really good use cases
+for it, not something generic that all website like to give but
+something more meaninful. (Pyro)
+    - my use cases for docker is roughly three things
+    - 1) to resolve the "works on my machine" issue in team dev
+    - 2) to run a variety of software versions under the same machine
+    - 3) to ease deployments and shuffling containers between systems
+
+Please show how we can integrate this with CI/CD. For example, once a
+PR is merged should that trigger a Jenkins job that runs a Dockerfile?
+How Docker fits into the overall picture is a bit fuzzy for me. (SchruteFarms)
+    - for test suites, there's no need to create docker containers
+    - the ci/cd system will, however, build the prod ready docker image
+    - productions servers could then pull this image in
+
+If someone is not using a CI/CD tool, is there a best practice for
+deployment an application remotely while utilizing Docker? (SchruteFarms)
+    - if it's just a matter of getting prod ready code to prod, a simple
+      script to git pull and restart the container(s) should be enough
+    - this assumes, of course, that your app has it's own script to fully
+      start itself up
+
+Docker seems to have created yet another layer of abstraction, why
+re-invent the wheel? (Pyro)
+    - the authors felt that this was necessary abstraction, and i believe
+      they were right
+    - docker is the first massively adopted lightweight container
+      system
+
+In what situations should we choose docker and when to choose
+virtual machine? (Masood Anwar, AMP_Y)
+    - vms should be chosen when the need is for an entire system within
+      a system with dedicated and reserved resources
+    - docker should be chosen when software needs to be ran in specific
+      environments across systems or when clusters of software are used
+
+What keeps docker relevant especially since it's procurement and half of
+it's feature set will be defunct post-2022? (Unknown)
+    - i'm assuming this is in reference to mirantis and them picking
+      up docker enterprise
+    - this only threatens docker swarm, not docker core
+    - docker core will still very much be relevant
+
+What will be the best resource for some one who is totaly new in docker
+apart from you stream and channel? (AMP_Y)
+    - i would say the docker docs which are very comprehensive and include
+      both reference material and tutorials
+
+Is there a way I can assign a specific internal docker ip to a container
+every time it restarts without using a DHCP type container? (Kuferon)
+    - if this question is in the context of one container talking to
+      another, just use networks and address the containers by name
+    - if this question is in the context of the host contacting the
+      container, this is generally done by binding host ports to
+      container ports
+    - to directly answer your quesiton though - ips can be assigned
+      to containers with the `--ip` flag when using `docker run`
+
+Is Docker still a relevant technology? I see it useful in some
+applications, but when it comes down to it, a full blown web server can
+just do so much more. What modern uses does it even have now? (Zach)
+    - conceptually, docker isn't intended to do a ton of things, it's
+      intended to do a bunch of small things separately really well
+    - also, sometimes web servers work well as frontends to docker
+      containers
+
+My company is looking to expand into docker. That said; what would
+be some advice/pitfalls you'd think to avoid? Words of wisdom for
+someone who's only experience has been taking the fundamentals class
+mirantis offers (I'm on the dev side, so mainly just building
+containers and handing them off more than the configuration side of
+things) (Draekalovich)
+    - one piece of advice would be to skip using docker directly
+      and go straight to using docker compose
+    - one pitfall to avoid is attempting to use a docker container
+      like a virtual machine, or making a docker container do too
+      much
+    - make sure to use volumes to avoid losing data. things that occur
+      in the container don't persist after it stops, other than data
+      written to volumes
+
+What do you think is the right moment in development when we should
+put our application in the Docker or introduce any kind of
+virtualization? (cvekaso)
+    - it's worth introducing docker in dev when multiple developers with
+      different environments are involved. this resolves the "works
+      on my machine" problem
+    - it's worth introducing it in prod if your host machine needs to
+      run multiple versions of the same thing
+
+What does Docker do that a VM doesn't? (Collin Padgett)
+    - it containes a large repository of prebuilt images that do
+      various things which can be downloaded and integrated into
+      your project
+    - it starts fast
+    - it uses host resources instead of requiring the reservation
+      of memory and drive space
+
+Explain it EM style. What is Docker Swarm and when should I use it? (BIPit)
+    - docker swarm is a means to deploy and run many copies of many
+      containers across many hosts and have it work seamlessly
+    - most simple docker examples apply to single hosts only
+
+When running a full stack application using docker do you use 3 separate
+containers to run your backend/frontend/database or just 1 container
+to run it all? (ferb)
+    - database for sure will get its own, usually a premade one
+      directly from the vendor (mysql, postgres, mongo, etc)
+    - if the backend and frontend would ordinarily be served from
+      the same web service, then those together might be one container
+    - port layout
