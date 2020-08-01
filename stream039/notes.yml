@@ -1,0 +1,199 @@
+meta:
+    - nothing
+
+Can you provide a brief overview about database sizing and process
+of performing database sizing? (Jitendra)
+    - database sizing mostly just involves estimating size growth over time
+    - this can be done by estimating the number of new records multiplied by
+      the estimated row size.
+    - sizing is hard because growth is often not known
+
+Why should someone choose a bare bone database when there is firebase
+available? And How hard is it to create algorithms such as authentication
+and real time updates similar to firebase in your own database
+(mysql etc) and is it worth it? (Manhoosbilli1)
+    - firebase combines both the underlying store with a built-in
+      framework that developers can integrate against
+    - the underlying store for firebase is much different from mysql
+    - many need the store that mysql offers
+    - building the same framework around mysql to mimic firebase
+      functionality of course is an entire project in itself
+
+What exactly is the difference between different DB options such as
+SQLite and PostgresSQL etc. When I was learning Django it was recommended
+to switch to PostgresSQL when deploying instead of
+SQLite (Chase (Yes dogs can learn programming too, don't judge))
+    - all three are similar in what they do but different in their
+      ideal use cases
+    - sqlite good for smaller applications, mobile applications, and
+      use cases where concurrency and huge databases aren't expected
+    - mysql and postgresql ideal for most applications where a central
+      database is required.
+
+Can we do anything and everything with MongoDB? (Unknown)
+    - short answer = pretty much
+    - long answer = mongbdb compared to other databases (ones that themselves
+      are not like mongodb) go about things much differently
+
+MySQL and PostgreSQL are both relational databases.  Does one handle
+certain types of workloads better than the other?  How does their
+performance compare? (Dan (otteydw in Discord), joost)
+    - they both accomplish the same task - provide and acid compliant
+      relational database platform
+    - postgresql excels at writes, geo, and scalability
+
+When deploying a small scale webapp with a local server (the server
+and the app code on the same machine/vps), what steps need to be taken
+to secure the database? (Specifically for mongodb but can also talk
+about sql DBs) (Nangz)
+    - first - protect the machine itself and make sure no ports are
+      exposed publicly
+    - second - make sure the database is only accessible via the mongo
+      daemon and that the files aren't accessible by the application
+
+Mongodb & Node specifically. After I connect to a mongodb db and do
+my crud action, do I need to close out my connection? Is there anything
+else that needs done at a high level? (Unknown)
+    - typically client software used to access a database platform
+      will open a persistent connection available for the life of
+      the application
+    - usually the developer will not need to do anything special
+
+I understand that for most small/beginner projects it really doesn't
+matter what database to use. At what scale should we really care
+about making this choice? (Unknown)
+    - certainly scale is a factor, but it's not the only factor
+    - features and performance in specific areas also drive the decision
+    - once a single database server is starting to struggle coping with
+      the increased load of an application, a whole host of new challenges
+      present themselves
+
+How important is our knowledge about algorithms and data structures
+when dealing with databases? Should I put the time to learn about
+this first before diving properly learning how to use a database
+and/or ORM e.g., Mongo and Mongoose, Sequelize, etc. Cheers! (Unknown)
+    - as it pertains to the database platform itself, it's not
+      super important at all
+    - working with the resulting data from the database within your
+      application could be aided by knowledge of some algorithms
+      and data structures but this is true of any application
+
+I've always struggled to get around the concept of storing images in
+a database, since we mostly use them to store plain text data, and
+their string representation is quite large. Can we use databases
+like MariaDB or MongoDB to store images? Is it better to store them
+in the regular filesystem of the server? Thanks! (Unknown)
+    - there's a datatype specifically for this sort of stuff and
+      it's called blob (binary large object).
+    - i very rarely (once that i can think of) store image data in
+      mysql because i often want easy access to that data over
+      http
+    - the one time i did store it was a very small image representation
+      of a signature. storing it in mysql just made sense for this
+      use case
+
+How do you design a database when you don't really know everything you
+might need? Sometimes when I create something I end up in a situation
+where I'm sort of stuck because I'm missing a column in a table that I
+should've added from the get go - or I've put a column in a table where
+I shouldn't have associated it to that table, but instead another. Do
+you literally sit down and plan all aspects of your database prior to
+development, or do you just sort of wing it and migrate the schema and
+deal with all those headaches associated with it? I think I get too
+excited to jump in and develop and then end up screwing myself having to
+spend loads of time dealing with the poor choices made on the database
+side. What are some good practices around planning out a database
+schema? (RussianHacker)
+    - you aren't the only one this happens to
+    - for most of my projects, there's always a data modeling step where
+      i sit down and think about what the data is going to look like
+    - i draw up the schema and make the create table statements
+
+Postgres vs mariadb/mysql for nextcloud usage? If no thoughts on Nextcloud
+just for everyday application use? (ghostrunner0808)
+    - personally, i use mysql because it's what i have been using for
+      20 years
+
+What is the difference between sql and mysql? (Kalix)
+    - sql is a generic query language used in certain database platforms
+    - mysql is the database platform itself
+
+How does sql injection work? (Kalix)
+    - sql injections work by supplying input that alters an underlying
+      sql query to behave in a way that wasn't intended
+    - original query  = select * from users where name = '${name}';
+    - value of name = '; drop table users; --
+    - resulting query =
+        select * from users where name = ''; drop table users; --';
+
+When would you use (and not use) HDF5? Which database would you
+recommend to replace HDF5 while keeping most of is advantageous
+(for example, having metadata describing the data,
+read/write speed)? (Unknown)
+    - i unfortunately have no domain expertise regarding hdf5
+
+Are all database comparable with all framework currently present
+Or specific database works with certain framework or they are not
+cross compatable? (AMP)
+    - for most popular database platforms, client libraries exist
+      for every major (and in some cases minor) language
+    - speaking about orms, typically and orm offers an abstraction
+      over one or more database platforms
+    - write the orm way and it doesn't matter what the underlying
+      platform is
+
+Is it advisable to change database management system completely
+from SQL based to NOSQL based DBMS? ON A ONGOING RUNNING PROJECT
+WHICH IS LIVE ON INTERNET (AMP)
+    - depending on the amount of data already stored, this could range
+      from a pretty simply thing to do up to a major project
+    - if the latter, i'd review the reasons for switching and make sure
+      it's worth the effort and potential downtime
+
+How to protect your Database from SQL injection? (AMP)
+    - the most effective way is to ensure any user input that might
+      be included as part of a query is fully santized to remove
+      the possibility that the supplied data transforms the query
+    - another option is use object relational mappers which remove the
+      need to even write queries at all as well as handling sql injection
+      prevention as part of that library
+
+Replication - How to read replicas and write servers interact with
+logs and transaction tracking to undertake replications especially
+when it comes to guaranteeing atomic transactions. Great show, thanks
+for the help. (Unknown)
+    - this will depend on which platform is operating in a cluster type mode
+    - for master-slave replication, writes go exclusively to the master
+      server and reads come from slave servers. as writes occur, slave
+      servers read the log and keep themselves up to date
+    - for multi-master replication, writes and reads come from any of
+      the nodes in the cluster. while accessibility is improved,
+      atomicity, consistency, and integrity is reduced
+    - at least for mysql, replications are already transactional
+
+Thanks for taking the time doing this.
+I got a few questions for hibernate-derby-java(ee)-html related stuff.
+1. I have integrated a database on my web application and I want to
+integrate a second one. How do I do that in the correct way, so I
+can link them with a primary key or foreign key function?
+2. Is it possible also to add columns into an existing database via
+user input? (vengeance)
+    - additional databases and tables can be queried alongside other
+      databases and tables. this is called a cross-database operation
+    - foreign keys can be created that reference tables from db1 in db2
+    - for adding columns via user input, i don't see why not. simply
+      execute the required sql in response to a user input
+
+How to create a Database? (Chirag)
+    - start by downloading a platform of your choice (mysql, postgres, etc)
+    - design your tables
+    - run the create statements for those tables in your new database
+
+Sql server deployment, applications connections to database,
+understanding cpu, storage and memory interaction/requirements. (Unknown)
+
+
+unrelated extra:
+
+i really dont understand the whole encryption thing because like how
+do you make an encryption key which cannot be reversed? (james bond)
