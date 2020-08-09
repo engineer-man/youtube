@@ -1,0 +1,35 @@
+.dark {
+    background: #222;
+    color: #fff;
+}
+
+.title {
+    color: #c1ffad;
+    margin-bottom: 5px;
+    margin-top: 0;
+    text-align: left;
+}
+
+.description {
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.wrapper {
+    display: inline-block;
+    background: #21371a;
+    border-left: #fff 1px solid;
+    padding: 20px;
+    margin: 20px;
+}
+
+.chase {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}

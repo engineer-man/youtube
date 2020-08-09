@@ -1,0 +1,16 @@
+background
+border
+color
+cursor
+display
+float
+font-size
+font-style
+font-weight
+height width
+top right bottom left
+margin
+padding
+position
+text-align
+text-decoration
