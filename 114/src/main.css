@@ -1,0 +1,92 @@
+* {
+    font-family: Helvetica;
+}
+
+body {
+    background: #521CB1;
+}
+
+.box {
+    background: #fff;
+    width: 240px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.title_row .edit {
+    background: #fff;
+    color: #ccc;
+    border: #eee 1px solid;
+    padding: 4px 8px;
+    font-weight: bold;
+    border-radius: 5px;
+    float: right;
+}
+
+.title_row .title {
+    margin: 0;
+    color: #ccc;
+    padding: 4px 0;
+}
+
+.date_row .date {
+    float: right;
+    font-size: 10px;
+    font-weight: bold;
+    color: #999;
+}
+
+.date_row .title {
+    font-size: 10px;
+    color: #ccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+hr {
+    border-top: #eee 1px solid;
+}
+
+.name_row {
+    margin-bottom: 10px;
+}
+
+.name_row .badge {
+    float: right;
+    background: #BCF7DF;
+    color: #37AF7F;
+    border-radius: 15px;
+    padding: 2px 8px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.name_row .name {
+    margin: 0;
+    color: #666;
+}
+
+.name_row .number {
+    font-size: 10px;
+    color: #999;
+}
+
+.name_row .send {
+    width: 100%;
+    background: #F0F1F5;
+    color: #8F98A2;
+    border: 0;
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.history {
+    color: #888;
+    margin: 0;
+    margin-top: 20px;
+    cursor: pointer;
+}
