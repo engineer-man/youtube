@@ -1,0 +1,9 @@
+xml 1.0
+html4
+css2
+internet explorer 5
+adobe photoshop 5.5
+php 4
+macromedia dreamweaver 1.0
+macromedia flash 1.0
+javascript

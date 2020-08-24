@@ -1,0 +1,39 @@
+body {
+    background: url(bg.png);
+    color: #fff;
+}
+
+.content {
+    width: 780px;
+    border: #fff 1px solid;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    color: #ff0;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+}
+
+marquee {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.pics img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    text-align: center;
+    width: 50%;
+}
