@@ -1,0 +1,3 @@
+1. check to make sure port forwarding is actually enabled
+2. make sure your computer's firewall isn't blocking anything
+3. make sure your isp isn't preventing connections
