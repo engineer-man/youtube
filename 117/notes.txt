@@ -1,0 +1,7 @@
+ip: 134.122.115.25
+password: 98609s7dj0fg9X!876s0d97fy0g9f
+
+step 1: make public/private key pair
+step 2: add public key to server
+step 3: verify passwordless login works
+step 4: disable password logins on server
