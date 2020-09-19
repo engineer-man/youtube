@@ -1,0 +1,100 @@
+meta:
+    - contests, awards, etc
+    - emkc future plans
+
+what is react, first -- super cool, unopinionated, one-way data
+binding frontend framework that combines html with js in a
+non brain damaged way
+
+example
+
+Does React completely replace the need to use jQuery or is it at all
+useful to use both in the same project? (Collin Padgett)
+    - i asked myself the same thing when i started with react
+    - short answer -- pretty much
+    - long answer -- many libraries use jquery as a dependency and
+      use jquery as the interface, e.g. $(ele).datepicker()
+
+How does React differ from something like an Angular or Vue.js?
+There's so many options I often don't know what to
+pick (bigdude4, Joel, Unknown)
+    - it differs in three primary ways
+    - opinons = angular is very opininonated, react much less so,
+      and vue is somewhere in the middle
+    - data binding - react is one-way, angular and vue are two-way
+    - size - this is related to opinions. because react does one
+      thing very well (components) and nothing else, it's not
+      as large. angular is a very "batteries included" type of tool
+
+Hey, can you please go over the process for transpiling jsx
+to js? Thanks dad (Unknown)
+    - son, this one is simple -- babel w/ react preset
+    - babel can be used on its own or with your bundler of choice,
+      such as webpack, gulp, browserify, and others
+    - the workflow is generally you'd write some jsx, webpack would
+      transpile the jsx and bundle it into a single js file, which
+      would then be included in your html
+
+What are the best practices for using React?
+How to structure files, how to prevent spaghetti code, etc. (avi12)
+    - one best practice is not making huge react components
+    - just like in normal programming, if you find yourself duplicating
+      html, it may be time to convert it to a component
+    - react is agnostic as far as file structure goes. i like to
+      organize my components by purpose and separate ones that are
+      common
+
+Is it possible to host a React website on GitHub pages? I've seen
+an article about it but have never gotten it to work. (anu)
+    - absolutely!
+    - the way this is done is with the gh-pages package
+
+I get this weird bug where arrays of elements are rendered out of
+order or incorrectly, any ideas? (Unknown)
+    - this is very likely caused by not using a key attribute
+    - react is very good at efficiently updating your ui when
+      state changes occur, but in loops it can't do this if it
+      can't identify each element uniquely
+
+It seems there's a library for everything in React, but I sometimes
+find it easier to use vanilla JS and/or CSS for many things, e.g.
+local storage, CSS transitions, and other things like selectors and
+utility functions. Is it an anti-pattern to step out of the
+"React Way" and use vanilla JS/CSS? Maybe creating utility
+functions and importing them as needed? Thanks a lot really
+appreciate you doing these for us, cheers! (Joao)
+    - fortunately, react is very unopinionated about interactions
+      with other tools
+    - to write part of your app with vanilla js and part in react
+      is perfectly ok. to try to interact with react components
+      with vanilla js might be problematic, so i'd avoid that
+    - it's common to have vanilla js utilities that are included
+      into and used in react components, so that's perfectly ok
+
+What are the differences between server-side rendering (Next.js)
+and static site generators (Gatsby)? When choosing either of
+these over good old client-side rendering with React? (Joao)
+    - both are react frameworks that offer an abstraction over
+      normal react, usually with the intent to improve some
+      pain point(s)
+    - the choice whether to use them comes down to the same
+      factors when choosing frameworks for other technologies --
+      do they offer functionality that improves your life
+
+Stepping out a bit of React but would you recommend learning React
+Native, if we are already familiar with React, over mobile native
+technologies like Kotlin? (Joao)
+    - glad you brought this up, this is very much related
+    - react native has a similar value prop in that you maintain
+      one code base and get apps in multiple platforms out
+      the other end
+    - this comes with usual challenges though -- react native can
+      never handle 100% since android and ios diverge in some areas
+    - that said, there's complex and beautiful apps written in
+      both, think of discord for example
+
+Hi EM, how do I know when I should make a new component? (mikey)
+    - the most common way to know is when you have duplicate html, or
+      you expected a set of html to be used across components
+    - visualizing your application as a set of components can
+      sometimes be challenging but it gets easier
