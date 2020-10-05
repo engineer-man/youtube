@@ -1,0 +1,13 @@
+step 1: enable usb debugging
+
+step 2: get android platform tools
+
+link:
+https://developer.android.com/studio/releases/platform-tools
+
+step 3: start server
+
+step 4: get scrcpy
+
+link:
+https://github.com/Genymobile/scrcpy
