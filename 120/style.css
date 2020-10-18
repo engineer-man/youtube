@@ -1,0 +1,17 @@
+html {
+    background: #222;
+    color: #fff;
+}
+
+body {
+    text-align: center;
+}
+
+.title {
+    font-size: 48px;
+}
+
+.price {
+    font-size: 38px;
+    color: #FCC117;
+}
