@@ -1,0 +1,3 @@
+769758546090131476
+68608
+https://discord.com/api/oauth2/authorize?client_id=769758546090131476&scope=bot&permissions=68608

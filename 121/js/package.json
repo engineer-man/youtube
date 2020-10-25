@@ -1,0 +1,5 @@
+{
+    "dependencies": {
+        "discord.js": "12.4.1"
+    }
+}
