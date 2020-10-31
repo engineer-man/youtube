@@ -1,0 +1,126 @@
+meta:
+    - contests
+    - community heroes on discord
+    - new segment format
+
+questions:
+
+Why is using a server (such as apache or nginx) as a
+reverse proxy the way to go when deploying live (instead of exposing
+the API directly)? (Tomzy)
+    - for pure apis, the best reason is probably ssl termination
+    - for web apis, caching and bypassing the api for static assets
+    - app ran as non-root, root requires to bind < 1024
+
+How does one go about securing self-created APIs? There are plenty
+of options out there - JSON web tokens + authentication middleware,
+using authorization scopes, etc. What are some "best practices"
+you can think of? (Kevbot)
+    - look at the type of api and determine from there
+    - for apis not dealing with user info, simple api key is good
+    - this key should be easily revokable
+    - json web tokens more secure but at the cost of greater
+      implementation burden
+    - for apis that deal with user info, oauth2 flow
+
+If you  were to design a new API from scratch, what are some general
+tips you would provide to make the API as consistent as possible as
+it grows in scale and endpoints? (Kevbot)
+    - first and most important piece of advice is to actually
+      make a plan
+    - next, to the extent possible, identify the different resources
+      that are going to be in play. this is easier on established
+      projects that just need an api vs entirely new projects
+    - think about how resources relate to one another and whether
+      separate resources or subresources are more appropriate
+      e.g.--
+          /api/v1/users
+          /api/v1/users/[user_id]/images
+          vs
+          /api/v1/users
+          /api/v1/user-images?user_id=123
+    - be consistent with naming. my personal preference is hyphens,
+      but it's much more important that it just all be the same
+    - think about http codes and decide up front which should be used
+      for what. sometimes it's not clear, e.g. 404 vs 200 vs 204
+
+What do people mean when they talk about API Wrappers? (George)
+    - you can think of an api wrapper as code written in
+      your language of choice which uses an api internally
+      and exposes functions for you to use instead of you
+      using the api directly
+    - api wrappers can also combine multiple api calls into
+      a single function call
+    - hides all complexity
+
+What is an API, What is a google API? i dont understand how you
+use it, please explain, thanks (Harry :))
+    - api = application programming interface
+    - google api = an api exposed to access some google service
+    - using google apis specifically requires a few general steps--
+        - create a cloud account and activate necessary apis
+        - generate an api key
+        - make call into an api endpoint that you need and
+          supply that api key
+    - example...
+
+can any language be used to contact 3rd party apis? (terry)
+    - yes, absolutely
+    - all you really need is an http client
+    - depending on the api and the language used, a wrapper might
+      be published making things very easy
+
+Could you cover oauth2 authentication flow, I always seem to
+have trouble with that. (Unknown)
+    - you're not alone, oauth2 is confusing for a few reasons
+    - first, you must understand why oauth is even required
+    - steps--
+        - user is sent to authorize access to their data
+        - user is returned back to application along with access code
+        - access code is exchanged for an access token
+        - access token is used to make authenticated calls to an api
+
+How do you keep API keys a secret in single page applications
+where requests to an endpoint (e.g., openweathermap) are made
+from the client? (Joao)
+    - the short answer is--you can't
+    - the long answer, at least as it pertains to browser delivered
+      maps, whether that's google maps, open*maps, etc. is that
+      they are always delivered via the browser and normally you
+      can control what domains they are allowed on
+    - for api keys that pertain just to the user, there's no
+      need to make them secret, as the user would simply be stealing
+      their own key anyway and that has no value
+
+What are your thoughts on the recent takedown of youtube-dl and what
+lessons can we learn from this as developers? (Joao)
+    - i think the major takeaway here is that when tools are authored
+      which serve both legal and illegal purposes, it needs to be
+      designed, documented, and marketed entirely for the legal use,
+      even if the author knows it will be used illegally
+    - i don't see youtube-dl any different from any tool found
+      on kali linux. there's a legal use and illegal use
+
+I work in analytics and my company asked me to use a 3rd party service
+to pull data from and they have a JSON API, I'm a little nervous because
+I've never done anything like this. Any tips? (ALX)
+    - don't panic, this is a lot easier than you think
+    - apis are usually documented thoroughly
+    - start by establishing and account and locating an api key
+    - then, get an http client like insomnia to start experimenting
+      with what their api can do
+    - finally, implement the rest in your code
+
+Why do some APIs use JSON but some use XML? (Unknown)
+    - json is new, xml is old
+    - xml is still common in legacy systems
+    - in an ideal world, no newly authored apis would use xml
+    - the big benefit with xml used to be schemas, but now
+      technologies like json w/ schemas exist
+
+Do apis cost money? (Unknown)
+    - if you pay at all, you're paying for the data/functionality that
+      is being accessed via apis, not the apis themselves
+    - it's very rare to charge for apis themselves, because--
+        - having an api is often a selling feature
+        - apis are sometimes the only way to access paid features
