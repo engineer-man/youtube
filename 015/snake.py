@@ -27,6 +27,7 @@ while True:
 
     if snake[0][0] in [0, sh] or snake[0][1]  in [0, sw] or snake[0] in snake[1:]:
         curses.endwin()
+        curses.curs_set(1)
         quit()
 
     new_head = [snake[0][0], snake[0][1]]
