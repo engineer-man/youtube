@@ -1,6 +1,0 @@
-location /cycle7228dfac2d789 {
-    proxy_pass http://raspberrypi/cycle;
-    proxy_redirect off;
-    proxy_read_timeout 1200;
-    proxy_http_version 1.1;
-}

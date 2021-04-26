@@ -1,5 +1,0 @@
-location /cycle {
-    content_by_lua_block {
-        os.execute('/home/gate/cycle.sh')
-    }
-}

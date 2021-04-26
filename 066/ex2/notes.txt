@@ -1,8 +1,0 @@
-# start
-docker-compose up
-
-# start in background
-docker-compose up -d
-
-# stop
-docker-compose down

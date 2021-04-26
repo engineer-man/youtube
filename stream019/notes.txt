@@ -1,6 +1,0 @@
-announcements:
-- 200k approaching
-- new subreddit
-    - ideas
-- possible tour
-- stream ideas

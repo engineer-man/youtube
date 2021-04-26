@@ -1,9 +1,0 @@
-build/
-dist/
-*.spec
-__pycache__/
-pieces/__pycache__/
-*.save
-*.pyc
-*.txt
-*.psd
