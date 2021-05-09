@@ -1,0 +1,133 @@
+
+
+
+
+
+
+
+                linode linux distro comparison
+                ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+
+
+
+
+
+
+
+
+
+main distros:
+
+
+
+
+
+
+
+
+    arch linux:
+        - original distro
+        - rolling release model, continuously updated
+        - software downloaded via pacman
+        - has an official repo and supports unofficial repos
+        - software often the newest available
+        good choice for:
+            - maximum customization
+            - no bloat
+            - new software
+
+
+
+
+
+
+
+
+    centos:
+        - downstream from redhat enterprise linux
+        - new release every 3-5 years, supported for
+          7-10 years
+        - software downloaded via yum
+        - has an official repo and supports unofficial repos
+        - software from official repos often older with a
+          focus on stability
+        good choice for:
+            - high security needs
+            - very stable only software
+            - enterprise focus
+
+
+
+
+
+
+
+
+
+
+    debian:
+        - original distro
+        - releases every 2 years, lts support 5 years
+        - software downloaded via apt
+        - has an official repo and supports unofficial repos
+        - software typically favors stable over newest
+        good choice for:
+            - a very mature distribution
+            - reliable releases
+            - comprehensive software distribution
+
+
+
+
+
+
+
+
+
+
+    ubuntu server:
+        - downstream from debian
+        - releases every 6 months, lts versions every 2 years
+        - software downloaded via apt
+        - has an official repo and supports unofficial repos
+        - software typically newer than debian
+        good choice for:
+            - batteries included software
+            - broad online resources for ubuntu
+            - leveraging the successes of debian
+
+
+
+
+
+
+
+
+
+
+
+
+
+other distros with main benefits:
+    alpine linux:
+        - simple and small
+        - security focused
+
+intro:
+    - Hey everyone, I'm Brian, a developer advocate here with Linode, and today I'm going
+      to show you a little about different distros that are available on Linode, how they're
+      different and when one may be a better choice than another.
+    - Before we get into it please subscribe if you haven't already, give this video a
+      like, and let's get started.
+outro:
+    - And that's it. There's a link in the description if you want to sign up for your own
+      Linode account to experiment with these distros, and let us know if you have any
+      questions in the comments and stay tuned for more tutorials.
+
+
+Hey everyone, I'm Brian and im a developer advocate here with Linode, and today I'm going to talk a little about some of the linux distros that are available on Linode, how they're different and when one may be a better choice than another.
+Before we get into it please subscribe if you haven't already, give this video a
+like if you found it helpful
+alpine, fedora, gentoo, slackware, and opensuse
+And that's it. There's a link in the description if you want to sign up for your own Linode account to experiment with these distros, and definitely let us know if you have any questions in the comments and be sure to stay tuned for more tutorials.

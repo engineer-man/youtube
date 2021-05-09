@@ -1,0 +1,21 @@
+tips:
+    understand what it means to use or eject from expo:
+        - only really one reason to eject -- native modules
+        - slightly more complicated live reload
+        - no more managed builds
+        - less seamless upgrades
+    understand that there is no dom:
+        - referring to e.target is not a thing
+        - dom manipulation is not a thing
+        - however, there's some overlap
+    use redux:
+        - your app is one large root component
+        - global state is quite helpful in some cases
+        - things like toasts, dialogs, etc feel more natural procedurally
+    consider using a ui framework:
+        - this is based on preference, but really speeds everything up
+        - i like material design, therefore i use react-native-paper
+        - helps in android/ios specific issues
+    it's ok to use a bunch of community modules:
+        - react native core sometimes defers to community solutions
+        - whatever you're used to in node.js/browser you can use here
