@@ -9,7 +9,9 @@ random.seed = (os.urandom(1024))
 
 url = 'http://craigslist.pottsfam.com/index872dijasydu2iuad27aysdu2yytaus6d2ajsdhasdasd2.php'
 
-names = json.loads(open('names.json').read())
+names_file = open('names.json')
+names = json.loads(names_file.read())
+names_file.close()
 
 for name in names:
 	name_extra = ''.join(random.choice(string.digits))
