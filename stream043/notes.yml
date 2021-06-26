@@ -1,0 +1,53 @@
+announcements:
+    - contests
+    - piston
+
+---
+
+basic stuff:
+    - calculator
+    - calendar
+    - backgrounds
+    - screensavers
+games:
+    - proton
+web browser:
+    - most browsers in windows have linux support
+      so this is more or less a non-issue
+    - brave, firefox, chromium all good options
+office tools:
+    - ms office online (everything)
+    - google docs (everything)
+    - libreoffice (everything)
+    - thunderbird (ms outlook)
+video players:
+    - other than windows branded tools, most
+      work on linux already
+    - vlc
+    - parole player
+    - mplayer
+pdfs:
+    - okular (reading)
+    - masterpdfeditor (making, editing)
+cloud storage:
+    - dropbox (onedrive replacement)
+    - google drive
+    - host your own nextcloud/onecloud
+photo editing:
+    - gimp (photoshop replacement)
+    - inkscape (fireworks/illustrator replacement)
+    - krita
+media center:
+    - plex (client and server)
+    - kodi/xmbc (client)
+torrenting:
+    - transmission
+    - brave browser (built in)
+video editing:
+    - kdenlive
+    - openshot
+sound editing:
+    - audacity (standard editing)
+    - mixx (dj stuff)
+obscure programs:
+    - maybe it works with wine
