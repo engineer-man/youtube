@@ -1,0 +1,15 @@
+replace ip addresses as appropriate
+
+run on machine 1
+echo 'punch hole' | nc -u -p 50001 143.198.238.218 50002
+nc -u -l 50001
+
+run on machine 2
+echo 'punch hole' | nc -u -p 50001 143.198.185.20 50002
+nc -u -l 50001
+
+run on machine 1
+echo 'hello' | nc -u -p 50002 143.198.238.218 50001
+
+run on machine 2
+echo 'hello' | nc -u -p 50002 143.198.185.20 50001
