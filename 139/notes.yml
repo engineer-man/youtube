@@ -1,0 +1,8 @@
+reasons:
+    - it disrespects open source licenses and may expose you to liability
+    - it may turn into a crutch that you'll depend heavily on and may have to pay for
+    - your private code is transmitted to github
+    - it can and will produce bad and/or unsafe code
+
+sources:
+    - https://copilot.github.com/
