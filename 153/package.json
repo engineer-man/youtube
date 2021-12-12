@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "axios": "^0.24.0",
+    "googleapis": "^92.0.0",
+    "qs": "^6.10.1"
+  }
+}
