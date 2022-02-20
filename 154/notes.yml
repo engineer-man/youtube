@@ -1,0 +1,8 @@
+tips:
+    - stay up-to-date on the latest version of node.js
+    - make use of well supported npm modules
+    - use a bundler for frontend things
+    - use async/await, normal promises to defer
+    - use strict equality === exclusively
+    - don't block the event loop
+    - avoid clever one-liners
