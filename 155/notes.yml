@@ -1,0 +1,9 @@
+tips:
+    - use less or sass
+    - considering using a component type framework
+      e.g. react, vue.js, angular, polymer, and others
+    - use scoped css
+    - use consistent naming
+    - use tables only for tabular data
+    - avoid deprecated html elements
+    - use open graph meta tags
