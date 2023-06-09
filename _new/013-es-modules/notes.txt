@@ -1,0 +1,16 @@
+prereqs:
+    - upgrade to at least node 12, 16 preferred
+
+how to go esm:
+    - add "type": "module" to package.json
+    - change out calls to require() with import
+    - change out module.exports to export default
+    - remove top level self-executing functions
+    - remove 'use strict'; from everywhere
+
+caveats:
+    - the above steps get you 90% the way
+
+import * as url from 'url';
+const __filename = url.fileURLToPath(import.meta.url);
+const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
